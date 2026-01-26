@@ -1,0 +1,231 @@
+{
+  "timestamp": "2026-01-26T13:29:46.404064",
+  "test_period_years": 4.380952380952381,
+  "strategies": {
+    "all": {
+      "breakeven_bps": 200,
+      "by_cost": {
+        "No Cost": {
+          "total_return_net": 19.826164779610004,
+          "total_return_gross": 19.8261775970459,
+          "total_costs": 0.0,
+          "sharpe_ratio": 9.003293660767897,
+          "max_drawdown": -0.0195509418309903,
+          "win_rate": 0.6541867954911433,
+          "profit_factor": 5.2404663034079935,
+          "avg_daily_return": 0.002765804781114947,
+          "avg_daily_return_gross": 0.002765804762020707,
+          "avg_daily_cost": 0.0,
+          "trading_days": 1104,
+          "total_trades": 9936
+        },
+        "HFT/Prime (3bp)": {
+          "total_return_net": 19.75749052283343,
+          "total_return_gross": 19.8261775970459,
+          "total_costs": 0.003311999999999999,
+          "sharpe_ratio": 8.99352801094086,
+          "max_drawdown": -0.019565706875588708,
+          "win_rate": 0.6541867954911433,
+          "profit_factor": 5.230719925842665,
+          "avg_daily_return": 0.002762804781114947,
+          "avg_daily_return_gross": 0.002765804762020707,
+          "avg_daily_cost": 2.9999999999999992e-06,
+          "trading_days": 1104,
+          "total_trades": 9936
+        },
+        "Institutional (10bp)": {
+          "total_return_net": 19.5981291601586,
+          "total_return_gross": 19.8261775970459,
+          "total_costs": 0.011040000000000001,
+          "sharpe_ratio": 8.970741494677785,
+          "max_drawdown": -0.019600157954556233,
+          "win_rate": 0.6541867954911433,
+          "profit_factor": 5.208052137525347,
+          "avg_daily_return": 0.0027558047811149476,
+          "avg_daily_return_gross": 0.002765804762020707,
+          "avg_daily_cost": 1e-05,
+          "trading_days": 1104,
+          "total_trades": 9936
+        },
+        "Retail Low (20bp)": {
+          "total_return_net": 19.37258817461297,
+          "total_return_gross": 19.8261775970459,
+          "total_costs": 0.022080000000000002,
+          "sharpe_ratio": 8.938189328587672,
+          "max_drawdown": -0.019649372101694196,
+          "win_rate": 0.6541867954911433,
+          "profit_factor": 5.175859372551765,
+          "avg_daily_return": 0.002745804781114947,
+          "avg_daily_return_gross": 0.002765804762020707,
+          "avg_daily_cost": 2e-05,
+          "trading_days": 1104,
+          "total_trades": 9936
+        },
+        "Retail High (50bp)": {
+          "total_return_net": 18.71066184692324,
+          "total_return_gross": 19.8261775970459,
+          "total_costs": 0.05520000000000001,
+          "sharpe_ratio": 8.840532830317336,
+          "max_drawdown": -0.019797002685133028,
+          "win_rate": 0.6541867954911433,
+          "profit_factor": 5.080248942168357,
+          "avg_daily_return": 0.002715804781114947,
+          "avg_daily_return_gross": 0.002765804762020707,
+          "avg_daily_cost": 5.000000000000001e-05,
+          "trading_days": 1104,
+          "total_trades": 9936
+        }
+      }
+    },
+    "p50": {
+      "breakeven_bps": 200,
+      "by_cost": {
+        "No Cost": {
+          "total_return_net": 38.56217291486122,
+          "total_return_gross": 38.56217291486122,
+          "total_costs": 0.0,
+          "sharpe_ratio": 10.391561079054258,
+          "max_drawdown": -0.029479917138814916,
+          "win_rate": 0.7357085346215781,
+          "profit_factor": 6.018639901550295,
+          "avg_daily_return": 0.003855729974677994,
+          "avg_daily_return_gross": 0.003855729974677994,
+          "avg_daily_cost": 0.0,
+          "trading_days": 960,
+          "total_trades": 4968
+        },
+        "HFT/Prime (3bp)": {
+          "total_return_net": 38.497001604618134,
+          "total_return_gross": 38.56217291486122,
+          "total_costs": 0.001656,
+          "sharpe_ratio": 10.387234790458116,
+          "max_drawdown": -0.02948025047214836,
+          "win_rate": 0.7357085346215781,
+          "profit_factor": 6.01419897379015,
+          "avg_daily_return": 0.0038540049746779935,
+          "avg_daily_return_gross": 0.003855729974677994,
+          "avg_daily_cost": 1.725e-06,
+          "trading_days": 960,
+          "total_trades": 4968
+        },
+        "Institutional (10bp)": {
+          "total_return_net": 38.34535185383384,
+          "total_return_gross": 38.56217291486122,
+          "total_costs": 0.005520000000000001,
+          "sharpe_ratio": 10.377138123279643,
+          "max_drawdown": -0.029481028249926104,
+          "win_rate": 0.7357085346215781,
+          "profit_factor": 6.003840814422681,
+          "avg_daily_return": 0.0038499799746779936,
+          "avg_daily_return_gross": 0.003855729974677994,
+          "avg_daily_cost": 5.750000000000001e-06,
+          "trading_days": 960,
+          "total_trades": 4968
+        },
+        "Retail Low (20bp)": {
+          "total_return_net": 38.12971750291924,
+          "total_return_gross": 38.56217291486122,
+          "total_costs": 0.011040000000000001,
+          "sharpe_ratio": 10.362709475894475,
+          "max_drawdown": -0.029482139361037173,
+          "win_rate": 0.7357085346215781,
+          "profit_factor": 5.9890801340974855,
+          "avg_daily_return": 0.003844229974677994,
+          "avg_daily_return_gross": 0.003855729974677994,
+          "avg_daily_cost": 1.1500000000000002e-05,
+          "trading_days": 960,
+          "total_trades": 4968
+        },
+        "Retail High (50bp)": {
+          "total_return_net": 37.489870022882755,
+          "total_return_gross": 38.56217291486122,
+          "total_costs": 0.0276,
+          "sharpe_ratio": 10.319389471211194,
+          "max_drawdown": -0.029485472694370563,
+          "win_rate": 0.7357085346215781,
+          "profit_factor": 5.9448125052169,
+          "avg_daily_return": 0.0038269799746779944,
+          "avg_daily_return_gross": 0.003855729974677994,
+          "avg_daily_cost": 2.8750000000000004e-05,
+          "trading_days": 960,
+          "total_trades": 4968
+        }
+      }
+    },
+    "p75": {
+      "breakeven_bps": 200,
+      "by_cost": {
+        "No Cost": {
+          "total_return_net": 26.77418530400698,
+          "total_return_gross": 26.77418530400698,
+          "total_costs": 0.0,
+          "sharpe_ratio": 12.614643100045924,
+          "max_drawdown": -0.02579135820269594,
+          "win_rate": 0.7902576489533011,
+          "profit_factor": 8.583963441293038,
+          "avg_daily_return": 0.005220742953962782,
+          "avg_daily_return_gross": 0.005220742953962782,
+          "avg_daily_cost": 0.0,
+          "trading_days": 641,
+          "total_trades": 2484
+        },
+        "HFT/Prime (3bp)": {
+          "total_return_net": 26.75133852120154,
+          "total_return_gross": 26.77418530400698,
+          "total_costs": 0.0008279999999999999,
+          "sharpe_ratio": 12.611894603936644,
+          "max_drawdown": -0.02579169153602915,
+          "win_rate": 0.7902576489533011,
+          "profit_factor": 8.579871057570598,
+          "avg_daily_return": 0.005219451222293514,
+          "avg_daily_return_gross": 0.005220742953962782,
+          "avg_daily_cost": 1.2917316692667705e-06,
+          "trading_days": 641,
+          "total_trades": 2484
+        },
+        "Institutional (10bp)": {
+          "total_return_net": 26.69810225513742,
+          "total_return_gross": 26.77418530400698,
+          "total_costs": 0.0027600000000000003,
+          "sharpe_ratio": 12.605479992635333,
+          "max_drawdown": -0.025792469313807066,
+          "win_rate": 0.7902576489533011,
+          "profit_factor": 8.570329131518337,
+          "avg_daily_return": 0.005216437181731892,
+          "avg_daily_return_gross": 0.005220742953962782,
+          "avg_daily_cost": 4.305772230889236e-06,
+          "trading_days": 641,
+          "total_trades": 2484
+        },
+        "Retail Low (20bp)": {
+          "total_return_net": 26.622227152386202,
+          "total_return_gross": 26.77418530400698,
+          "total_costs": 0.005520000000000001,
+          "sharpe_ratio": 12.59631273357472,
+          "max_drawdown": -0.025793580424918167,
+          "win_rate": 0.7902576489533011,
+          "profit_factor": 8.556685689556993,
+          "avg_daily_return": 0.0052121314095010035,
+          "avg_daily_return_gross": 0.005220742953962782,
+          "avg_daily_cost": 8.611544461778472e-06,
+          "trading_days": 641,
+          "total_trades": 2484
+        },
+        "Retail High (50bp)": {
+          "total_return_net": 26.39584385795331,
+          "total_return_gross": 26.77418530400698,
+          "total_costs": 0.0138,
+          "sharpe_ratio": 12.56878607863969,
+          "max_drawdown": -0.025796913758251418,
+          "win_rate": 0.7902576489533011,
+          "profit_factor": 8.515808436795938,
+          "avg_daily_return": 0.005199214092808335,
+          "avg_daily_return_gross": 0.005220742953962782,
+          "avg_daily_cost": 2.1528861154446178e-05,
+          "trading_days": 641,
+          "total_trades": 2484
+        }
+      }
+    }
+  }
+}

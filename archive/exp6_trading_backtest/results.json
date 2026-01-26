@@ -1,0 +1,141 @@
+{
+  "timestamp": "2026-01-26T12:38:20.473786",
+  "strategies": {
+    "all": {
+      "total_return": 19.88197135925293,
+      "sharpe_ratio": 9.008380059663974,
+      "max_drawdown": -0.019550863653421402,
+      "win_rate": 0.6542874396135265,
+      "profit_factor": 5.240428447723389,
+      "avg_trades_per_day": 9.0,
+      "trading_days": 1104,
+      "total_trades": 9936,
+      "threshold": 0
+    },
+    "p25": {
+      "total_return": 27.541298809974986,
+      "sharpe_ratio": 8.91427775249901,
+      "max_drawdown": -0.036668315925176234,
+      "win_rate": 0.690150295222759,
+      "profit_factor": 4.851957880837783,
+      "avg_trades_per_day": 6.75,
+      "trading_days": 1094,
+      "total_trades": 7452,
+      "threshold": 0.08919364959001541,
+      "percentile": 25
+    },
+    "p50": {
+      "total_return": 38.521627995834066,
+      "sharpe_ratio": 10.3883642515011,
+      "max_drawdown": -0.029479917138814916,
+      "win_rate": 0.7355072463768116,
+      "profit_factor": 6.017084661130653,
+      "avg_trades_per_day": 4.5,
+      "trading_days": 960,
+      "total_trades": 4968,
+      "threshold": 0.19061318039894104,
+      "percentile": 50
+    },
+    "p60": {
+      "total_return": 36.59427217749773,
+      "sharpe_ratio": 11.137715719719546,
+      "max_drawdown": -0.02209335231082014,
+      "win_rate": 0.7564779874213836,
+      "profit_factor": 6.707220840096525,
+      "avg_trades_per_day": 3.6005434782608696,
+      "trading_days": 845,
+      "total_trades": 3975,
+      "threshold": 0.2409147024154663,
+      "percentile": 60
+    },
+    "p70": {
+      "total_return": 33.43325949191083,
+      "sharpe_ratio": 12.258828056914554,
+      "max_drawdown": -0.02209335231082005,
+      "win_rate": 0.7792687017779268,
+      "profit_factor": 7.913615045553304,
+      "avg_trades_per_day": 2.70018115942029,
+      "trading_days": 716,
+      "total_trades": 2981,
+      "threshold": 0.2998005747795105,
+      "percentile": 70
+    },
+    "p75": {
+      "total_return": 26.948760404315735,
+      "sharpe_ratio": 12.629940942194843,
+      "max_drawdown": -0.025791358202695912,
+      "win_rate": 0.7906602254428341,
+      "profit_factor": 8.598279325904855,
+      "avg_trades_per_day": 2.25,
+      "trading_days": 641,
+      "total_trades": 2484,
+      "threshold": 0.33897924423217773,
+      "percentile": 75
+    },
+    "p80": {
+      "total_return": 20.618019477696315,
+      "sharpe_ratio": 11.86970555170178,
+      "max_drawdown": -0.02579135820269581,
+      "win_rate": 0.7987927565392354,
+      "profit_factor": 9.092816094837495,
+      "avg_trades_per_day": 1.8007246376811594,
+      "trading_days": 543,
+      "total_trades": 1988,
+      "threshold": 0.3848465085029602,
+      "percentile": 80
+    },
+    "p85": {
+      "total_return": 16.922193569319596,
+      "sharpe_ratio": 13.14469281970904,
+      "max_drawdown": -0.020226485421217084,
+      "win_rate": 0.8202548625083836,
+      "profit_factor": 12.686405064788365,
+      "avg_trades_per_day": 1.3505434782608696,
+      "trading_days": 436,
+      "total_trades": 1491,
+      "threshold": 0.4420107305049896,
+      "percentile": 85
+    },
+    "p90": {
+      "total_return": 8.316176042872579,
+      "sharpe_ratio": 12.53573128138645,
+      "max_drawdown": -0.020226485421217258,
+      "win_rate": 0.8329979879275654,
+      "profit_factor": 11.286196213938766,
+      "avg_trades_per_day": 0.9003623188405797,
+      "trading_days": 310,
+      "total_trades": 994,
+      "threshold": 0.5277211666107178,
+      "percentile": 90
+    },
+    "p95": {
+      "total_return": 3.5966907268550905,
+      "sharpe_ratio": 13.470129778684294,
+      "max_drawdown": -0.02223135941943103,
+      "win_rate": 0.8511066398390342,
+      "profit_factor": 12.675596851844471,
+      "avg_trades_per_day": 0.45018115942028986,
+      "trading_days": 164,
+      "total_trades": 497,
+      "threshold": 0.6782848834991455,
+      "percentile": 95
+    }
+  },
+  "multi_seed_sharpes": {
+    "all": [
+      9.011358679642603,
+      9.464674740646949,
+      9.390224380291642,
+      9.011937750616848,
+      9.446781258303915
+    ],
+    "p75": [
+      12.67294372003408,
+      12.274280562092018,
+      11.77731197856841,
+      11.6731116348879,
+      10.041256249933863
+    ]
+  },
+  "best_sharpe_strategy": "p95"
+}

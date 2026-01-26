@@ -1,0 +1,492 @@
+{
+  "per_currency": {
+    "EUR": {
+      "accuracy": 0.6313405797101449,
+      "pred_positive_rate": 0.49184782608695654,
+      "target_positive_rate": 0.4963768115942029,
+      "bias": -0.004528985507246341,
+      "false_positive": 201,
+      "false_negative": 206,
+      "n_wrong": 407
+    },
+    "JPY": {
+      "accuracy": 0.7001811594202898,
+      "pred_positive_rate": 0.483695652173913,
+      "target_positive_rate": 0.46648550724637683,
+      "bias": 0.017210144927536197,
+      "false_positive": 175,
+      "false_negative": 156,
+      "n_wrong": 331
+    },
+    "GBP": {
+      "accuracy": 0.6621376811594203,
+      "pred_positive_rate": 0.48641304347826086,
+      "target_positive_rate": 0.5217391304347826,
+      "bias": -0.03532608695652173,
+      "false_positive": 167,
+      "false_negative": 206,
+      "n_wrong": 373
+    },
+    "CAD": {
+      "accuracy": 0.6512681159420289,
+      "pred_positive_rate": 0.49094202898550726,
+      "target_positive_rate": 0.4936594202898551,
+      "bias": -0.002717391304347838,
+      "false_positive": 191,
+      "false_negative": 194,
+      "n_wrong": 385
+    },
+    "AUD": {
+      "accuracy": 0.5471014492753623,
+      "pred_positive_rate": 0.5117753623188406,
+      "target_positive_rate": 0.5335144927536232,
+      "bias": -0.021739130434782594,
+      "false_positive": 238,
+      "false_negative": 262,
+      "n_wrong": 500
+    },
+    "CHF": {
+      "accuracy": 0.6639492753623188,
+      "pred_positive_rate": 0.48097826086956524,
+      "target_positive_rate": 0.4692028985507246,
+      "bias": 0.011775362318840632,
+      "false_positive": 192,
+      "false_negative": 179,
+      "n_wrong": 371
+    },
+    "NZD": {
+      "accuracy": 0.6793478260869565,
+      "pred_positive_rate": 0.4927536231884058,
+      "target_positive_rate": 0.5090579710144928,
+      "bias": -0.016304347826086973,
+      "false_positive": 168,
+      "false_negative": 186,
+      "n_wrong": 354
+    },
+    "SEK": {
+      "accuracy": 0.6458333333333334,
+      "pred_positive_rate": 0.5063405797101449,
+      "target_positive_rate": 0.5054347826086957,
+      "bias": 0.0009057971014492239,
+      "false_positive": 196,
+      "false_negative": 195,
+      "n_wrong": 391
+    },
+    "NOK": {
+      "accuracy": 0.6630434782608695,
+      "pred_positive_rate": 0.4936594202898551,
+      "target_positive_rate": 0.5081521739130435,
+      "bias": -0.01449275362318836,
+      "false_positive": 178,
+      "false_negative": 194,
+      "n_wrong": 372
+    }
+  },
+  "lag_effect": {
+    "EUR": {
+      "lag_accuracies": {
+        "-5": 0.5004549590536852,
+        "-4": 0.4909090909090909,
+        "-3": 0.5004541326067211,
+        "-2": 0.4900181488203267,
+        "-1": 0.43517679057116954,
+        "0": 0.6313405797101449,
+        "1": 0.5131459655485041,
+        "2": 0.5054446460980037,
+        "3": 0.4695731153496821,
+        "4": 0.4772727272727273,
+        "5": 0.5095541401273885
+      },
+      "best_lag": 0,
+      "best_lag_accuracy": 0.6313405797101449,
+      "current_accuracy": 0.6313405797101449,
+      "improvement_with_lag": 0.0
+    },
+    "JPY": {
+      "lag_accuracies": {
+        "-5": 0.4886260236578708,
+        "-4": 0.5018181818181818,
+        "-3": 0.5031789282470481,
+        "-2": 0.4727767695099819,
+        "-1": 0.44152311876699907,
+        "0": 0.7001811594202898,
+        "1": 0.4904805077062557,
+        "2": 0.46007259528130673,
+        "3": 0.4940962761126249,
+        "4": 0.4954545454545455,
+        "5": 0.5159235668789809
+      },
+      "best_lag": 0,
+      "best_lag_accuracy": 0.7001811594202898,
+      "current_accuracy": 0.7001811594202898,
+      "improvement_with_lag": 0.0
+    },
+    "GBP": {
+      "lag_accuracies": {
+        "-5": 0.4986351228389445,
+        "-4": 0.49363636363636365,
+        "-3": 0.5395095367847411,
+        "-2": 0.47368421052631576,
+        "-1": 0.45330915684496825,
+        "0": 0.6621376811594203,
+        "1": 0.527651858567543,
+        "2": 0.4727767695099819,
+        "3": 0.4822888283378747,
+        "4": 0.48363636363636364,
+        "5": 0.5131938125568699
+      },
+      "best_lag": 0,
+      "best_lag_accuracy": 0.6621376811594203,
+      "current_accuracy": 0.6621376811594203,
+      "improvement_with_lag": 0.0
+    },
+    "CAD": {
+      "lag_accuracies": {
+        "-5": 0.467697907188353,
+        "-4": 0.5009090909090909,
+        "-3": 0.49591280653950953,
+        "-2": 0.49183303085299457,
+        "-1": 0.4823209428830462,
+        "0": 0.6512681159420289,
+        "1": 0.5203989120580236,
+        "2": 0.48003629764065336,
+        "3": 0.5040871934604905,
+        "4": 0.49454545454545457,
+        "5": 0.5050045495905369
+      },
+      "best_lag": 0,
+      "best_lag_accuracy": 0.6512681159420289,
+      "current_accuracy": 0.6512681159420289,
+      "improvement_with_lag": 0.0
+    },
+    "AUD": {
+      "lag_accuracies": {
+        "-5": 0.5004549590536852,
+        "-4": 0.5163636363636364,
+        "-3": 0.5004541326067211,
+        "-2": 0.47005444646098005,
+        "-1": 0.5793291024478694,
+        "0": 0.5471014492753623,
+        "1": 0.5176790571169537,
+        "2": 0.49637023593466423,
+        "3": 0.4950045413260672,
+        "4": 0.5063636363636363,
+        "5": 0.5341219290263877
+      },
+      "best_lag": -1,
+      "best_lag_accuracy": 0.5793291024478694,
+      "current_accuracy": 0.5471014492753623,
+      "improvement_with_lag": 0.03222765317250709
+    },
+    "CHF": {
+      "lag_accuracies": {
+        "-5": 0.5104640582347588,
+        "-4": 0.5,
+        "-3": 0.4977293369663942,
+        "-2": 0.4827586206896552,
+        "-1": 0.48050770625566636,
+        "0": 0.6639492753623188,
+        "1": 0.5040797824116047,
+        "2": 0.49909255898366606,
+        "3": 0.49318801089918257,
+        "4": 0.4954545454545455,
+        "5": 0.5159235668789809
+      },
+      "best_lag": 0,
+      "best_lag_accuracy": 0.6639492753623188,
+      "current_accuracy": 0.6639492753623188,
+      "improvement_with_lag": 0.0
+    },
+    "NZD": {
+      "lag_accuracies": {
+        "-5": 0.4959053685168335,
+        "-4": 0.5145454545454545,
+        "-3": 0.49682107175295187,
+        "-2": 0.46007259528130673,
+        "-1": 0.443336355394379,
+        "0": 0.6793478260869565,
+        "1": 0.5031731640979148,
+        "2": 0.49364791288566245,
+        "3": 0.49227974568574023,
+        "4": 0.49363636363636365,
+        "5": 0.5068243858052776
+      },
+      "best_lag": 0,
+      "best_lag_accuracy": 0.6793478260869565,
+      "current_accuracy": 0.6793478260869565,
+      "improvement_with_lag": 0.0
+    },
+    "SEK": {
+      "lag_accuracies": {
+        "-5": 0.49499545040946313,
+        "-4": 0.4763636363636364,
+        "-3": 0.5131698455949137,
+        "-2": 0.48548094373865697,
+        "-1": 0.4514959202175884,
+        "0": 0.6458333333333334,
+        "1": 0.4968268359020852,
+        "2": 0.4927404718693285,
+        "3": 0.4986376021798365,
+        "4": 0.4809090909090909,
+        "5": 0.5168334849863512
+      },
+      "best_lag": 0,
+      "best_lag_accuracy": 0.6458333333333334,
+      "current_accuracy": 0.6458333333333334,
+      "improvement_with_lag": 0.0
+    },
+    "NOK": {
+      "lag_accuracies": {
+        "-5": 0.4895359417652411,
+        "-4": 0.5036363636363637,
+        "-3": 0.51952770208901,
+        "-2": 0.47731397459165154,
+        "-1": 0.4524025385312783,
+        "0": 0.6630434782608695,
+        "1": 0.5122393472348141,
+        "2": 0.4954627949183303,
+        "3": 0.5104450499545867,
+        "4": 0.5218181818181818,
+        "5": 0.4895359417652411
+      },
+      "best_lag": 0,
+      "best_lag_accuracy": 0.6630434782608695,
+      "current_accuracy": 0.6630434782608695,
+      "improvement_with_lag": 0.0
+    }
+  },
+  "temporal": {
+    "poor_streaks": [
+      [
+        4,
+        5,
+        2
+      ],
+      [
+        10,
+        12,
+        3
+      ],
+      [
+        17,
+        17,
+        1
+      ],
+      [
+        22,
+        22,
+        1
+      ],
+      [
+        31,
+        31,
+        1
+      ],
+      [
+        33,
+        33,
+        1
+      ],
+      [
+        48,
+        48,
+        1
+      ],
+      [
+        52,
+        54,
+        3
+      ],
+      [
+        62,
+        63,
+        2
+      ],
+      [
+        70,
+        71,
+        2
+      ]
+    ],
+    "mean_accuracy": 0.6493558776167472,
+    "std_accuracy": 0.25918454680074543,
+    "autocorr_lag1": 0.05896984822847796,
+    "autocorr_lag5": -0.009349582974552031
+  },
+  "cycle": {
+    "dominant_periods": [
+      {
+        "period_days": 1104.0,
+        "power": 0.026488289676882014
+      },
+      {
+        "period_days": 368.0,
+        "power": 0.02298440484349151
+      },
+      {
+        "period_days": 184.0,
+        "power": 0.026058234623674296
+      },
+      {
+        "period_days": 122.66666666666667,
+        "power": 0.027943737898007942
+      },
+      {
+        "period_days": 69.0,
+        "power": 0.026682199026091615
+      }
+    ],
+    "has_weekly_cycle": false,
+    "has_monthly_cycle": false
+  },
+  "consecutive": {
+    "EUR": {
+      "max_error_streak": 6,
+      "avg_error_streak": 1.6477732793522266,
+      "positive_direction_streaks": 108,
+      "negative_direction_streaks": 139,
+      "direction_bias": "negative"
+    },
+    "JPY": {
+      "max_error_streak": 5,
+      "avg_error_streak": 1.4145299145299146,
+      "positive_direction_streaks": 118,
+      "negative_direction_streaks": 116,
+      "direction_bias": "balanced"
+    },
+    "GBP": {
+      "max_error_streak": 9,
+      "avg_error_streak": 1.5672268907563025,
+      "positive_direction_streaks": 113,
+      "negative_direction_streaks": 125,
+      "direction_bias": "balanced"
+    },
+    "CAD": {
+      "max_error_streak": 6,
+      "avg_error_streak": 1.4980544747081712,
+      "positive_direction_streaks": 119,
+      "negative_direction_streaks": 138,
+      "direction_bias": "balanced"
+    },
+    "AUD": {
+      "max_error_streak": 8,
+      "avg_error_streak": 1.8248175182481752,
+      "positive_direction_streaks": 123,
+      "negative_direction_streaks": 151,
+      "direction_bias": "negative"
+    },
+    "CHF": {
+      "max_error_streak": 7,
+      "avg_error_streak": 1.44921875,
+      "positive_direction_streaks": 132,
+      "negative_direction_streaks": 124,
+      "direction_bias": "balanced"
+    },
+    "NZD": {
+      "max_error_streak": 9,
+      "avg_error_streak": 1.475,
+      "positive_direction_streaks": 117,
+      "negative_direction_streaks": 123,
+      "direction_bias": "balanced"
+    },
+    "SEK": {
+      "max_error_streak": 8,
+      "avg_error_streak": 1.6781115879828326,
+      "positive_direction_streaks": 111,
+      "negative_direction_streaks": 122,
+      "direction_bias": "balanced"
+    },
+    "NOK": {
+      "max_error_streak": 8,
+      "avg_error_streak": 1.55,
+      "positive_direction_streaks": 118,
+      "negative_direction_streaks": 122,
+      "direction_bias": "balanced"
+    }
+  },
+  "cross_currency": {
+    "currencies": [
+      "EUR",
+      "JPY",
+      "GBP",
+      "CAD",
+      "AUD",
+      "CHF",
+      "NZD",
+      "SEK",
+      "NOK"
+    ],
+    "high_corr_pairs": [
+      {
+        "pair": [
+          "EUR",
+          "GBP"
+        ],
+        "correlation": 0.40287079253463753
+      },
+      {
+        "pair": [
+          "EUR",
+          "CHF"
+        ],
+        "correlation": 0.3029893675179367
+      },
+      {
+        "pair": [
+          "EUR",
+          "NZD"
+        ],
+        "correlation": 0.31576413838498446
+      },
+      {
+        "pair": [
+          "EUR",
+          "SEK"
+        ],
+        "correlation": 0.5137003860924714
+      },
+      {
+        "pair": [
+          "GBP",
+          "NZD"
+        ],
+        "correlation": 0.4160520773873084
+      },
+      {
+        "pair": [
+          "GBP",
+          "SEK"
+        ],
+        "correlation": 0.3879966068056473
+      },
+      {
+        "pair": [
+          "CHF",
+          "SEK"
+        ],
+        "correlation": 0.31115875658830006
+      },
+      {
+        "pair": [
+          "NZD",
+          "SEK"
+        ],
+        "correlation": 0.3839808446213408
+      },
+      {
+        "pair": [
+          "NZD",
+          "NOK"
+        ],
+        "correlation": 0.3026772352366811
+      },
+      {
+        "pair": [
+          "SEK",
+          "NOK"
+        ],
+        "correlation": 0.38165759004994926
+      }
+    ]
+  }
+}

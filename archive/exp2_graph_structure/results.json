@@ -1,0 +1,76 @@
+{
+  "experiment": "exp2_graph_structure",
+  "timestamp": "2026-01-26T11:42:27.311297",
+  "results": {
+    "no_graph": {
+      "rmse": 0.7443051934242249,
+      "mae": 0.5423750281333923,
+      "hit": 0.6527777910232544,
+      "n_edges": 0
+    },
+    "full": {
+      "rmse": 0.7468880414962769,
+      "mae": 0.544765293598175,
+      "hit": 0.6543880701065063,
+      "n_edges": 90
+    },
+    "regional": {
+      "rmse": 0.7412635684013367,
+      "mae": 0.5420312285423279,
+      "hit": 0.6464372277259827,
+      "n_edges": 26
+    },
+    "commodity": {
+      "rmse": 0.7443423867225647,
+      "mae": 0.544292688369751,
+      "hit": 0.6497584581375122,
+      "n_edges": 12
+    },
+    "safe_haven": {
+      "rmse": 0.7388997077941895,
+      "mae": 0.5420046448707581,
+      "hit": 0.6553945541381836,
+      "n_edges": 6
+    },
+    "usd_hub": {
+      "rmse": 0.7436783313751221,
+      "mae": 0.543755292892456,
+      "hit": 0.6504629850387573,
+      "n_edges": 18
+    },
+    "major_pairs": {
+      "rmse": 0.7386561036109924,
+      "mae": 0.5402815937995911,
+      "hit": 0.6541867852210999,
+      "n_edges": 20
+    },
+    "hybrid": {
+      "rmse": 0.7407587170600891,
+      "mae": 0.5412601828575134,
+      "hit": 0.6500604152679443,
+      "n_edges": 32
+    }
+  },
+  "ranking": [
+    "major_pairs",
+    "safe_haven",
+    "hybrid",
+    "regional",
+    "usd_hub",
+    "no_graph",
+    "commodity",
+    "full"
+  ],
+  "conclusion": {
+    "best_graph": "major_pairs",
+    "best_rmse": 0.7386561036109924,
+    "full_vs_no_graph": 0.002582848072052002,
+    "sparse_better_than_no_graph": [
+      "major_pairs",
+      "safe_haven",
+      "hybrid",
+      "regional",
+      "usd_hub"
+    ]
+  }
+}

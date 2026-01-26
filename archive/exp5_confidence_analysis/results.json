@@ -1,0 +1,545 @@
+{
+  "timestamp": "2026-01-26T12:25:57.460910",
+  "bootstrap": {
+    "overall": {
+      "hit": 0.6543880837359098,
+      "ci_low": 0.644927536231884,
+      "ci_high": 0.6638511473429951
+    },
+    "q4": {
+      "hit": 0.7910628019323671,
+      "ci_low": 0.7745571658615137,
+      "ci_high": 0.8071658615136876,
+      "coverage": 0.25
+    },
+    "improvement": {
+      "value": 0.13667471819645727,
+      "z_score": 14.556528772801846,
+      "p_value": 0.0
+    }
+  },
+  "threshold_sweep": [
+    {
+      "percentile": "0",
+      "threshold": 3.987550735473633e-05,
+      "hit_rate": 0.6543880837359098,
+      "coverage": 1.0,
+      "n_samples": "9936"
+    },
+    {
+      "percentile": "5",
+      "threshold": 0.017593391239643097,
+      "hit_rate": 0.6588621676025003,
+      "coverage": 0.9499798711755234,
+      "n_samples": "9439"
+    },
+    {
+      "percentile": "10",
+      "threshold": 0.035841792821884155,
+      "hit_rate": 0.6670767166182062,
+      "coverage": 0.8999597423510467,
+      "n_samples": "8942"
+    },
+    {
+      "percentile": "15",
+      "threshold": 0.05393920838832855,
+      "hit_rate": 0.6751924215512137,
+      "coverage": 0.8499396135265701,
+      "n_samples": "8445"
+    },
+    {
+      "percentile": "20",
+      "threshold": 0.07013970613479614,
+      "hit_rate": 0.6813435652283306,
+      "coverage": 0.8000201288244766,
+      "n_samples": "7949"
+    },
+    {
+      "percentile": "25",
+      "threshold": 0.08909954875707626,
+      "hit_rate": 0.6902844873859366,
+      "coverage": 0.75,
+      "n_samples": "7452"
+    },
+    {
+      "percentile": "30",
+      "threshold": 0.10760632157325745,
+      "hit_rate": 0.697196261682243,
+      "coverage": 0.6999798711755234,
+      "n_samples": "6955"
+    },
+    {
+      "percentile": "35",
+      "threshold": 0.12670417875051498,
+      "hit_rate": 0.7070300402601425,
+      "coverage": 0.6499597423510467,
+      "n_samples": "6458"
+    },
+    {
+      "percentile": "40",
+      "threshold": 0.14649993181228638,
+      "hit_rate": 0.7158671586715867,
+      "coverage": 0.6000402576489533,
+      "n_samples": "5962"
+    },
+    {
+      "percentile": "45",
+      "threshold": 0.16846105456352234,
+      "hit_rate": 0.7249771271729186,
+      "coverage": 0.5500201288244766,
+      "n_samples": "5465"
+    },
+    {
+      "percentile": "50",
+      "threshold": 0.190549835562706,
+      "hit_rate": 0.7357085346215781,
+      "coverage": 0.5,
+      "n_samples": "4968"
+    },
+    {
+      "percentile": "55",
+      "threshold": 0.21332990378141403,
+      "hit_rate": 0.748154775218072,
+      "coverage": 0.44997987117552335,
+      "n_samples": "4471"
+    },
+    {
+      "percentile": "60",
+      "threshold": 0.24082428216934204,
+      "hit_rate": 0.7562264150943396,
+      "coverage": 0.40006038647342995,
+      "n_samples": "3975"
+    },
+    {
+      "percentile": "65",
+      "threshold": 0.268937312066555,
+      "hit_rate": 0.7685451408855665,
+      "coverage": 0.3500402576489533,
+      "n_samples": "3478"
+    },
+    {
+      "percentile": "70",
+      "threshold": 0.29987749457359314,
+      "hit_rate": 0.7789332438778933,
+      "coverage": 0.30002012882447665,
+      "n_samples": "2981"
+    },
+    {
+      "percentile": "75",
+      "threshold": 0.3385142982006073,
+      "hit_rate": 0.7910628019323671,
+      "coverage": 0.25,
+      "n_samples": "2484"
+    },
+    {
+      "percentile": "80",
+      "threshold": 0.38482481241226196,
+      "hit_rate": 0.7992957746478874,
+      "coverage": 0.2000805152979066,
+      "n_samples": "1988"
+    },
+    {
+      "percentile": "85",
+      "threshold": 0.44215625524520874,
+      "hit_rate": 0.8189134808853119,
+      "coverage": 0.15006038647342995,
+      "n_samples": "1491"
+    },
+    {
+      "percentile": "90",
+      "threshold": 0.5275335311889648,
+      "hit_rate": 0.8319919517102615,
+      "coverage": 0.1000402576489533,
+      "n_samples": "994"
+    },
+    {
+      "percentile": "95",
+      "threshold": 0.6781851351261139,
+      "hit_rate": 0.8511066398390342,
+      "coverage": 0.05002012882447665,
+      "n_samples": "497"
+    }
+  ],
+  "multi_seed": [
+    {
+      "seed": 42,
+      "overall_hit": 0.6541867954911433,
+      "high_conf_hit": 0.7910628019323671,
+      "improvement": 0.13687600644122377
+    },
+    {
+      "seed": 123,
+      "overall_hit": 0.6551932367149759,
+      "high_conf_hit": 0.7942834138486312,
+      "improvement": 0.13909017713365535
+    },
+    {
+      "seed": 456,
+      "overall_hit": 0.6550925925925926,
+      "high_conf_hit": 0.7946859903381642,
+      "improvement": 0.13959339774557167
+    },
+    {
+      "seed": 789,
+      "overall_hit": 0.6519726247987118,
+      "high_conf_hit": 0.7898550724637681,
+      "improvement": 0.1378824476650563
+    },
+    {
+      "seed": 1000,
+      "overall_hit": 0.6547906602254429,
+      "high_conf_hit": 0.7809983896940419,
+      "improvement": 0.12620772946859904
+    }
+  ],
+  "baseline_comparison": {
+    "GNN": [
+      {
+        "percentile": "0",
+        "threshold": 2.9802322387695312e-06,
+        "hit_rate": 0.6541867954911433,
+        "coverage": 1.0,
+        "n_samples": "9936"
+      },
+      {
+        "percentile": "5",
+        "threshold": 0.017783895134925842,
+        "hit_rate": 0.6587562241762899,
+        "coverage": 0.9499798711755234,
+        "n_samples": "9439"
+      },
+      {
+        "percentile": "10",
+        "threshold": 0.03588983416557312,
+        "hit_rate": 0.6671885484231715,
+        "coverage": 0.8999597423510467,
+        "n_samples": "8942"
+      },
+      {
+        "percentile": "15",
+        "threshold": 0.05372641235589981,
+        "hit_rate": 0.6750740082889284,
+        "coverage": 0.8499396135265701,
+        "n_samples": "8445"
+      },
+      {
+        "percentile": "20",
+        "threshold": 0.07033714652061462,
+        "hit_rate": 0.6813435652283306,
+        "coverage": 0.8000201288244766,
+        "n_samples": "7949"
+      },
+      {
+        "percentile": "25",
+        "threshold": 0.0892251506447792,
+        "hit_rate": 0.6902844873859366,
+        "coverage": 0.75,
+        "n_samples": "7452"
+      },
+      {
+        "percentile": "30",
+        "threshold": 0.10753557085990906,
+        "hit_rate": 0.6970524802300503,
+        "coverage": 0.6999798711755234,
+        "n_samples": "6955"
+      },
+      {
+        "percentile": "35",
+        "threshold": 0.12685858458280563,
+        "hit_rate": 0.7070300402601425,
+        "coverage": 0.6499597423510467,
+        "n_samples": "6458"
+      },
+      {
+        "percentile": "40",
+        "threshold": 0.14650985598564148,
+        "hit_rate": 0.71569942972157,
+        "coverage": 0.6000402576489533,
+        "n_samples": "5962"
+      },
+      {
+        "percentile": "45",
+        "threshold": 0.16840048879384995,
+        "hit_rate": 0.7247941445562671,
+        "coverage": 0.5500201288244766,
+        "n_samples": "5465"
+      },
+      {
+        "percentile": "50",
+        "threshold": 0.19036875665187836,
+        "hit_rate": 0.7357085346215781,
+        "coverage": 0.5,
+        "n_samples": "4968"
+      },
+      {
+        "percentile": "55",
+        "threshold": 0.21317372471094131,
+        "hit_rate": 0.7479311116081414,
+        "coverage": 0.44997987117552335,
+        "n_samples": "4471"
+      },
+      {
+        "percentile": "60",
+        "threshold": 0.24075767397880554,
+        "hit_rate": 0.7572327044025158,
+        "coverage": 0.40006038647342995,
+        "n_samples": "3975"
+      },
+      {
+        "percentile": "65",
+        "threshold": 0.26881082355976105,
+        "hit_rate": 0.7688326624496837,
+        "coverage": 0.3500402576489533,
+        "n_samples": "3478"
+      },
+      {
+        "percentile": "70",
+        "threshold": 0.2996995449066162,
+        "hit_rate": 0.7792687017779268,
+        "coverage": 0.30002012882447665,
+        "n_samples": "2981"
+      },
+      {
+        "percentile": "75",
+        "threshold": 0.33841391652822495,
+        "hit_rate": 0.7910628019323671,
+        "coverage": 0.25,
+        "n_samples": "2484"
+      },
+      {
+        "percentile": "80",
+        "threshold": 0.38466185331344604,
+        "hit_rate": 0.7992957746478874,
+        "coverage": 0.2000805152979066,
+        "n_samples": "1988"
+      },
+      {
+        "percentile": "85",
+        "threshold": 0.44224391132593155,
+        "hit_rate": 0.8195841716968477,
+        "coverage": 0.15006038647342995,
+        "n_samples": "1491"
+      },
+      {
+        "percentile": "90",
+        "threshold": 0.5279256701469421,
+        "hit_rate": 0.8329979879275654,
+        "coverage": 0.1000402576489533,
+        "n_samples": "994"
+      },
+      {
+        "percentile": "95",
+        "threshold": 0.677560493350029,
+        "hit_rate": 0.8531187122736419,
+        "coverage": 0.05002012882447665,
+        "n_samples": "497"
+      }
+    ],
+    "NoGNN": [
+      {
+        "percentile": "0",
+        "threshold": 3.3676624298095703e-06,
+        "hit_rate": 0.6526771336553945,
+        "coverage": 1.0,
+        "n_samples": "9936"
+      },
+      {
+        "percentile": "5",
+        "threshold": 0.014783523976802826,
+        "hit_rate": 0.6581205636190275,
+        "coverage": 0.9499798711755234,
+        "n_samples": "9439"
+      },
+      {
+        "percentile": "10",
+        "threshold": 0.03044774755835533,
+        "hit_rate": 0.6659583985685529,
+        "coverage": 0.8999597423510467,
+        "n_samples": "8942"
+      },
+      {
+        "percentile": "15",
+        "threshold": 0.0450090691447258,
+        "hit_rate": 0.6741267021906453,
+        "coverage": 0.8499396135265701,
+        "n_samples": "8445"
+      },
+      {
+        "percentile": "20",
+        "threshold": 0.060560330748558044,
+        "hit_rate": 0.6829789910680589,
+        "coverage": 0.8000201288244766,
+        "n_samples": "7949"
+      },
+      {
+        "percentile": "25",
+        "threshold": 0.07736766710877419,
+        "hit_rate": 0.6920289855072463,
+        "coverage": 0.75,
+        "n_samples": "7452"
+      },
+      {
+        "percentile": "30",
+        "threshold": 0.0940885953605175,
+        "hit_rate": 0.7009345794392523,
+        "coverage": 0.6999798711755234,
+        "n_samples": "6955"
+      },
+      {
+        "percentile": "35",
+        "threshold": 0.11341327056288719,
+        "hit_rate": 0.707959120470734,
+        "coverage": 0.6499597423510467,
+        "n_samples": "6458"
+      },
+      {
+        "percentile": "40",
+        "threshold": 0.1341014802455902,
+        "hit_rate": 0.7187185508218719,
+        "coverage": 0.6000402576489533,
+        "n_samples": "5962"
+      },
+      {
+        "percentile": "45",
+        "threshold": 0.1538493148982525,
+        "hit_rate": 0.7257090576395242,
+        "coverage": 0.5500201288244766,
+        "n_samples": "5465"
+      },
+      {
+        "percentile": "50",
+        "threshold": 0.17491457611322403,
+        "hit_rate": 0.7332930756843801,
+        "coverage": 0.5,
+        "n_samples": "4968"
+      },
+      {
+        "percentile": "55",
+        "threshold": 0.19771500676870346,
+        "hit_rate": 0.7465891299485574,
+        "coverage": 0.44997987117552335,
+        "n_samples": "4471"
+      },
+      {
+        "percentile": "60",
+        "threshold": 0.2236473709344864,
+        "hit_rate": 0.7542138364779875,
+        "coverage": 0.40006038647342995,
+        "n_samples": "3975"
+      },
+      {
+        "percentile": "65",
+        "threshold": 0.25181447714567184,
+        "hit_rate": 0.7656699252443934,
+        "coverage": 0.3500402576489533,
+        "n_samples": "3478"
+      },
+      {
+        "percentile": "70",
+        "threshold": 0.28571195900440216,
+        "hit_rate": 0.7796041596779604,
+        "coverage": 0.30002012882447665,
+        "n_samples": "2981"
+      },
+      {
+        "percentile": "75",
+        "threshold": 0.32212749868631363,
+        "hit_rate": 0.787842190016103,
+        "coverage": 0.25,
+        "n_samples": "2484"
+      },
+      {
+        "percentile": "80",
+        "threshold": 0.36458635330200195,
+        "hit_rate": 0.8023138832997988,
+        "coverage": 0.2000805152979066,
+        "n_samples": "1988"
+      },
+      {
+        "percentile": "85",
+        "threshold": 0.41716455668210983,
+        "hit_rate": 0.8169014084507042,
+        "coverage": 0.15006038647342995,
+        "n_samples": "1491"
+      },
+      {
+        "percentile": "90",
+        "threshold": 0.5027236640453339,
+        "hit_rate": 0.8400402414486922,
+        "coverage": 0.1000402576489533,
+        "n_samples": "994"
+      },
+      {
+        "percentile": "95",
+        "threshold": 0.6684714257717133,
+        "hit_rate": 0.8651911468812877,
+        "coverage": 0.05002012882447665,
+        "n_samples": "497"
+      }
+    ]
+  },
+  "market_conditions": {
+    "Gold": {
+      "high_conf_mean": 0.17081180214881897,
+      "low_conf_mean": 0.0038635532837361097,
+      "difference": 0.16694824397563934,
+      "t_stat": 8.236650936866715,
+      "p_value": 1.9941531801035442e-16,
+      "significant": "True"
+    },
+    "VIX": {
+      "high_conf_mean": 0.02451450005173683,
+      "low_conf_mean": -0.009163635782897472,
+      "difference": 0.03367813676595688,
+      "t_stat": 1.5583563973051646,
+      "p_value": 0.1191806418490945,
+      "significant": "False"
+    },
+    "Oil": {
+      "high_conf_mean": -0.005376155488193035,
+      "low_conf_mean": -0.028711121529340744,
+      "difference": 0.023334965109825134,
+      "t_stat": 1.148575159819403,
+      "p_value": 0.2507588601097874,
+      "significant": "False"
+    },
+    "US10Y": {
+      "high_conf_mean": -0.17012299597263336,
+      "low_conf_mean": 0.13116246461868286,
+      "difference": -0.30128544569015503,
+      "t_stat": -10.698308454223987,
+      "p_value": 1.445912909627334e-26,
+      "significant": "True"
+    },
+    "Copper": {
+      "high_conf_mean": 0.014971188269555569,
+      "low_conf_mean": -0.016078393906354904,
+      "difference": 0.031049583107233047,
+      "t_stat": 1.340490835245118,
+      "p_value": 0.18011647629006486,
+      "significant": "False"
+    },
+    "SP500": {
+      "high_conf_mean": 0.08702197670936584,
+      "low_conf_mean": -0.01996861957013607,
+      "difference": 0.10699059814214706,
+      "t_stat": 5.125368605359882,
+      "p_value": 3.025425682352285e-07,
+      "significant": "True"
+    },
+    "US2Y": {
+      "high_conf_mean": -0.26105645298957825,
+      "low_conf_mean": 0.19123509526252747,
+      "difference": -0.4522915482521057,
+      "t_stat": -11.818926425561425,
+      "p_value": 5.104582737775056e-32,
+      "significant": "True"
+    }
+  },
+  "summary": {
+    "significant_improvement": "True",
+    "robust_across_seeds": true,
+    "achieves_75_target": true,
+    "best_coverage_at_75": 0.40006038647342995
+  }
+}
