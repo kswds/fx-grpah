@@ -33,7 +33,7 @@ class Config:
 
     # Currencies
     ccys: List[str] = field(default_factory=lambda: [
-        "USD", "EUR", "JPY", "GBP", "CAD", "AUD", "CHF", "NZD", "SEK", "NOK"
+        "USD", "EUR", "JPY", "GBP", "CAD", "AUD", "CHF", "NZD", "SEK", "NOK", "CNY"
     ])
 
     # Global features
@@ -45,6 +45,8 @@ class Config:
         "Global_Copper",
         "Global_SP500",
         "Global_US2Y",
+        "Global_Shanghai",
+        "Global_IronOre",
     ])
 
     # Enhanced mode options (our additions)

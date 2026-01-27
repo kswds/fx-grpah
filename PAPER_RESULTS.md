@@ -409,6 +409,9 @@ python3 exp14_significance/run.py
 | Attention over A | `exp12_attention_over_a/run.py` | `exp12_attention_over_a/` |
 | Error Pattern | `exp13_error_pattern/run.py` | `exp13_error_pattern/` |
 | Significance | `exp14_significance/run.py` | `exp14_significance/` |
+| **Archive** | | |
+| Confidence Graph | `archive/exp15_confidence_graph/run.py` | Appendix A.1 |
+| Rank Loss | `archive/exp16_rank_loss/run.py` | Appendix A.2 |
 
 ---
 
@@ -640,4 +643,108 @@ python3 exp13_error_pattern/verify_aud_lag.py
 
 ---
 
-*Generated: 2026-01-26*
+## Appendix: Experimental Approaches (Archive)
+
+아래 실험들은 성능 개선이 미미하여 main contribution에 포함하지 않고 archive로 이동함.
+
+---
+
+### A.1 Confidence-Weighted Sparse Graph (exp15)
+
+**목적**: Magnitude prediction 개선을 위한 confidence 기반 접근
+
+#### 시도한 모델들
+
+| Model | Description |
+|-------|-------------|
+| FXStrengthConfidenceGraph | 학습된 confidence로 edge weighting |
+| FXStrengthMagnitudeAware | \|prediction\|을 confidence로 사용 |
+| FXStrengthIterativeRefinement | 다중 iteration으로 예측 정제 |
+
+#### Results
+
+| Model | Hit Rate | Weighted Hit | Mag Ratio | Std Ratio |
+|-------|----------|--------------|-----------|-----------|
+| Baseline | 64.9% | 70.5% | 37.4% | 34.7% |
+| MagnitudeAware | 64.9% | 70.3% | **42.9%** | **42.9%** |
+| Iterative (K=2) | 65.0% | 70.6% | 36.1% | 33.5% |
+| Iterative (K=3) | 64.6% | 70.5% | 36.7% | 34.1% |
+| ConfidenceGraph | 64.4% | 70.5% | 38.9% | 36.9% |
+
+#### Key Findings
+
+1. **MagnitudeAware가 Magnitude Ratio 최고** (+5%p): 하지만 여전히 43% 수준
+2. **학습된 confidence가 uniform해짐** (std=0.012): edge weighting 효과 없음
+3. **근본 원인**: zero-mean normalization이 variance를 제한
+
+#### Conclusion
+
+- Magnitude prediction 개선은 아키텍처 한계로 인해 의미있는 개선 어려움
+- 현재 모델은 "방향" 예측에 최적화되어 있음
+
+#### 실행 방법
+```bash
+python3 archive/exp15_confidence_graph/run.py
+```
+
+---
+
+### A.2 Rank-based Loss Functions (exp16)
+
+**목적**: 순위 예측 관점에서 loss function 개선
+
+#### 시도한 Loss Functions
+
+| Loss Type | Description |
+|-----------|-------------|
+| MSE | Baseline MSE only |
+| ListMLE | MSE + Listwise ranking loss |
+| Pairwise | MSE + Pairwise margin loss |
+| TopK | MSE + Top-K focused loss |
+| Rank Combined | MSE + All rank losses |
+| Extreme Only | MSE + Top-1/Bottom-1 margin loss |
+
+#### Results
+
+| Loss Type | Hit Rate | Spearman | Top-1 | Bot-1 | LS Sharpe |
+|-----------|----------|----------|-------|-------|-----------|
+| MSE | 65.3% | 0.196 | 18.9% | 23.7% | 7.10 |
+| ListMLE | 65.4% | 0.195 | 18.9% | 23.7% | 7.24 |
+| Pairwise | 65.1% | 0.190 | 18.6% | 23.6% | 7.27 |
+| TopK | 65.4% | 0.195 | 19.0% | 23.2% | 7.06 |
+| Rank Combined | 65.3% | 0.194 | 18.9% | 23.4% | 7.26 |
+| **Extreme Only** | 65.5% | 0.196 | **19.4%** | 23.7% | **7.42** |
+
+#### Key Findings
+
+1. **개선 폭 미미**: Top-1 accuracy 18.9% → 19.4% (+0.5%p)
+2. **Noise 범위 내**: 통계적으로 유의미한 차이 아님
+3. **Random baseline**: Top-1 accuracy = 10% (1/10 currencies)
+4. **현재 모델이 이미 random 대비 ~2배 성능**
+
+#### Conclusion
+
+- Rank-based loss는 미미한 개선만 제공
+- MSE baseline이 이미 합리적인 rank prediction 수행
+- **Appendix 수준의 contribution**
+
+#### 실행 방법
+```bash
+python3 archive/exp16_rank_loss/run.py
+```
+
+---
+
+### A.3 Archive Summary
+
+| Experiment | 목적 | 결과 | 상태 |
+|------------|------|------|------|
+| exp15_confidence_graph | Magnitude prediction 개선 | +5%p mag ratio (여전히 43%) | ❌ Not significant |
+| exp16_rank_loss | Rank prediction 개선 | +0.5%p top-1 acc | ❌ Not significant |
+
+**결론**: 두 접근법 모두 근본적 아키텍처 한계 (zero-mean normalization) 극복 못함.
+Main contribution은 Heterogeneous A matrix에 집중하는 것이 적절함.
+
+---
+
+*Generated: 2026-01-27*
