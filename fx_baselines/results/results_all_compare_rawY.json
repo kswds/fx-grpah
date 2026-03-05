@@ -1,0 +1,216 @@
+{
+  "experiment_info": {
+    "note": "RAW-Y FX forecasting: targets are RAW USD-base log returns. NO Y normalization. Inputs scaled using TRAIN-only stats. Granger-proxy graph built using TRAIN lag-1 correlations. Shock propagation: propagate -> macro -> propagate.",
+    "lookback": 10,
+    "rv_window": 10,
+    "epochs": 30,
+    "lr": 0.0003,
+    "batch_size": 128,
+    "hidden": 64,
+    "dropout": 0.1,
+    "use_granger_graph": true,
+    "granger_topk": 3,
+    "granger_min_weight": 0.0,
+    "shockprop_steps": 2,
+    "extreme_percentile": 0.9,
+    "n_runs": 1,
+    "seeds": [
+      42
+    ]
+  },
+  "runs": [
+    {
+      "seed": 42,
+      "metrics": {
+        "mlp_with_macro": {
+          "rmse": 0.007346848025918007,
+          "mae": 0.005274190101772547,
+          "hit": 0.5378742218017578,
+          "weighted_hit": 0.5727998614311218,
+          "pos_rate": 0.47840064764022827,
+          "naive": 0.5215993523597717,
+          "thr": 0.010499059222638607,
+          "hit_norm": 0.5353005528450012,
+          "hit_ext": 0.5671641826629639,
+          "rmse_norm": 0.004501348827034235,
+          "rmse_ext": 0.014069591648876667
+        },
+        "static_fc_with_macro": {
+          "rmse": 0.00599747383967042,
+          "mae": 0.004290805663913488,
+          "hit": 0.6050834059715271,
+          "weighted_hit": 0.6743196249008179,
+          "pos_rate": 0.47840064764022827,
+          "naive": 0.5215993523597717,
+          "thr": 0.010499059222638607,
+          "hit_norm": 0.5942076444625854,
+          "hit_ext": 0.7288557291030884,
+          "rmse_norm": 0.0036026439629495144,
+          "rmse_ext": 0.012122493237257004
+        },
+        "granger_shockprop_with_macro": {
+          "rmse": 0.00548817403614521,
+          "mae": 0.0038987435400485992,
+          "hit": 0.6542093753814697,
+          "weighted_hit": 0.7415674924850464,
+          "pos_rate": 0.47840064764022827,
+          "naive": 0.5215993523597717,
+          "thr": 0.010499059222638607,
+          "hit_norm": 0.6408743262290955,
+          "hit_ext": 0.8059701323509216,
+          "rmse_norm": 0.0032660947181284428,
+          "rmse_ext": 0.011098663322627544
+        },
+        "granger_shockprop_macro_zero": {
+          "rmse": 0.0057602240704,
+          "mae": 0.004090187139809132,
+          "hit": 0.6337150931358337,
+          "weighted_hit": 0.722414493560791,
+          "pos_rate": 0.47840064764022827,
+          "naive": 0.5215993523597717,
+          "thr": 0.010499059222638607,
+          "hit_norm": 0.616939902305603,
+          "hit_ext": 0.8246268630027771,
+          "rmse_norm": 0.003265267936512828,
+          "rmse_ext": 0.013478260487318039
+        }
+      },
+      "summary": {
+        "fc_minus_mlp_hit": 0.06720918416976929,
+        "gsp_minus_fc_hit": 0.04912596940994263,
+        "macro_contribution_hit": 0.020494282245635986,
+        "fc_minus_mlp_rmse": -0.0013493741862475872,
+        "gsp_minus_fc_rmse": -0.0005092998035252094,
+        "macro_contribution_rmse": -0.00027205003425478935
+      },
+      "graph_info": {
+        "use_granger_graph": true,
+        "granger_topk": 3,
+        "granger_min_weight": 0.0,
+        "shockprop_steps": 2
+      }
+    }
+  ],
+  "aggregate": {
+    "BASELINE: MLP (GRU + Hetero-Macro)": {
+      "hit_mean_ci": [
+        0.5378742218017578,
+        NaN,
+        NaN
+      ],
+      "rmse_mean_ci": [
+        0.007346848025918007,
+        NaN,
+        NaN
+      ],
+      "hit_ext_mean_ci": [
+        0.5671641826629639,
+        NaN,
+        NaN
+      ],
+      "w_hit_mean_ci": [
+        0.5727998614311218,
+        NaN,
+        NaN
+      ]
+    },
+    "GNN: STATIC-FC graph (WITH MACRO)": {
+      "hit_mean_ci": [
+        0.6050834059715271,
+        NaN,
+        NaN
+      ],
+      "rmse_mean_ci": [
+        0.00599747383967042,
+        NaN,
+        NaN
+      ],
+      "hit_ext_mean_ci": [
+        0.7288557291030884,
+        NaN,
+        NaN
+      ],
+      "w_hit_mean_ci": [
+        0.6743196249008179,
+        NaN,
+        NaN
+      ]
+    },
+    "GNN: GRANGER + SHOCK-PROP (WITH MACRO)": {
+      "hit_mean_ci": [
+        0.6542093753814697,
+        NaN,
+        NaN
+      ],
+      "rmse_mean_ci": [
+        0.00548817403614521,
+        NaN,
+        NaN
+      ],
+      "hit_ext_mean_ci": [
+        0.8059701323509216,
+        NaN,
+        NaN
+      ],
+      "w_hit_mean_ci": [
+        0.7415674924850464,
+        NaN,
+        NaN
+      ]
+    },
+    "GNN: GRANGER + SHOCK-PROP (MACRO=ZERO)": {
+      "hit_mean_ci": [
+        0.6337150931358337,
+        NaN,
+        NaN
+      ],
+      "rmse_mean_ci": [
+        0.0057602240704,
+        NaN,
+        NaN
+      ],
+      "hit_ext_mean_ci": [
+        0.8246268630027771,
+        NaN,
+        NaN
+      ],
+      "w_hit_mean_ci": [
+        0.722414493560791,
+        NaN,
+        NaN
+      ]
+    },
+    "DIFFS": {
+      "fc_minus_mlp_hit_mean_ci": [
+        0.06720918416976929,
+        NaN,
+        NaN
+      ],
+      "gsp_minus_fc_hit_mean_ci": [
+        0.04912596940994263,
+        NaN,
+        NaN
+      ],
+      "macro_contribution_hit_mean_ci": [
+        0.020494282245635986,
+        NaN,
+        NaN
+      ],
+      "fc_minus_mlp_rmse_mean_ci": [
+        -0.0013493741862475872,
+        NaN,
+        NaN
+      ],
+      "gsp_minus_fc_rmse_mean_ci": [
+        -0.0005092998035252094,
+        NaN,
+        NaN
+      ],
+      "macro_contribution_rmse_mean_ci": [
+        -0.00027205003425478935,
+        NaN,
+        NaN
+      ]
+    }
+  }
+}
