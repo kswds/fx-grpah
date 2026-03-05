@@ -1,14 +1,12 @@
-# FX Graph Research (RAW-Y)
-
-This repository contains a minimal, reproducible experimental pipeline for **multi-currency FX return forecasting** using:
+# FX Graph Research
 
 - **Baseline (MLP)**: strong non-graph model (shared GRU per currency + heterogeneous macro injection)
-- **Static FC Graph**: fully-connected (row-stochastic) graph aggregation + macro injection
+- **Static FC Graph**: fully-connected graph aggregation + macro injection
 - **Granger-proxy + Shock Propagation**: directed Granger-proxy graph from TRAIN data + propagate → macro shock → propagate
 
 ## Key updates
 
-### 1) Target is RAW FX log return (no Y normalization)
+### 1) Target is RAW FX log return
 
 - We use a consistent USD-base convention (see `dataset.py: fx_to_log()`).
 - Target **Y is not normalized**: `Y_raw[t, i] = FXRet[t, i]` where FXRet is the log-diff of the USD-base log price.
