@@ -1,0 +1,1496 @@
+{
+  "timestamp": "2026-03-05T02:33:12.600248",
+  "config": {
+    "train_days": 1000,
+    "test_days": 250,
+    "n_folds": 18
+  },
+  "summary": {
+    "hit_ccy": {
+      "mean": 0.6306,
+      "std": 0.0619
+    },
+    "hit_55": {
+      "mean": 0.6063,
+      "std": 0.0458
+    }
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "train_period": "2005-01-31 ~ 2008-11-11",
+      "test_period": "2008-11-12 ~ 2009-10-22",
+      "n_test": 250,
+      "hit_ccy": 0.5056,
+      "hit_55": 0.5177,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 34.97,
+            "cagr_pct": 35.29,
+            "sharpe_ratio": 3.64,
+            "hit_rate": 0.5177,
+            "annual_vol_pct": 8.39,
+            "max_drawdown_pct": 2.5,
+            "win_rate": 0.564,
+            "n_days": 250,
+            "final_nav": 1.3497
+          },
+          "top30": {
+            "total_return_pct": 103.96,
+            "cagr_pct": 105.13,
+            "sharpe_ratio": 3.87,
+            "hit_rate": 0.5538,
+            "annual_vol_pct": 19.02,
+            "max_drawdown_pct": 3.76,
+            "win_rate": 0.604,
+            "n_days": 250,
+            "final_nav": 2.0396
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 5.13,
+            "cagr_pct": 5.17,
+            "sharpe_ratio": 0.64,
+            "hit_rate": 0.5177,
+            "annual_vol_pct": 8.39,
+            "max_drawdown_pct": 8.7,
+            "win_rate": 0.444,
+            "n_days": 250,
+            "final_nav": 1.0513
+          },
+          "top30": {
+            "total_return_pct": 58.94,
+            "cagr_pct": 59.53,
+            "sharpe_ratio": 2.55,
+            "hit_rate": 0.5538,
+            "annual_vol_pct": 19.02,
+            "max_drawdown_pct": 6.25,
+            "win_rate": 0.544,
+            "n_days": 250,
+            "final_nav": 1.5894
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -18.13,
+            "cagr_pct": -18.26,
+            "sharpe_ratio": -2.36,
+            "hit_rate": 0.5177,
+            "annual_vol_pct": 8.39,
+            "max_drawdown_pct": 24.18,
+            "win_rate": 0.352,
+            "n_days": 250,
+            "final_nav": 0.8187
+          },
+          "top30": {
+            "total_return_pct": 23.82,
+            "cagr_pct": 24.03,
+            "sharpe_ratio": 1.22,
+            "hit_rate": 0.5538,
+            "annual_vol_pct": 19.02,
+            "max_drawdown_pct": 12.78,
+            "win_rate": 0.476,
+            "n_days": 250,
+            "final_nav": 1.2382
+          }
+        }
+      }
+    },
+    {
+      "fold": 1,
+      "train_period": "2006-01-11 ~ 2009-10-22",
+      "test_period": "2009-10-23 ~ 2010-10-04",
+      "n_test": 250,
+      "hit_ccy": 0.5128,
+      "hit_55": 0.5194,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 12.72,
+            "cagr_pct": 12.83,
+            "sharpe_ratio": 2.63,
+            "hit_rate": 0.5194,
+            "annual_vol_pct": 4.62,
+            "max_drawdown_pct": 2.37,
+            "win_rate": 0.568,
+            "n_days": 250,
+            "final_nav": 1.1272
+          },
+          "top30": {
+            "total_return_pct": 26.78,
+            "cagr_pct": 27.03,
+            "sharpe_ratio": 2.65,
+            "hit_rate": 0.537,
+            "annual_vol_pct": 9.19,
+            "max_drawdown_pct": 4.96,
+            "win_rate": 0.552,
+            "n_days": 250,
+            "final_nav": 1.2678
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": -12.22,
+            "cagr_pct": -12.31,
+            "sharpe_ratio": -2.82,
+            "hit_rate": 0.5194,
+            "annual_vol_pct": 4.62,
+            "max_drawdown_pct": 13.29,
+            "win_rate": 0.38,
+            "n_days": 250,
+            "final_nav": 0.8778
+          },
+          "top30": {
+            "total_return_pct": -1.25,
+            "cagr_pct": -1.26,
+            "sharpe_ratio": -0.09,
+            "hit_rate": 0.537,
+            "annual_vol_pct": 9.19,
+            "max_drawdown_pct": 9.94,
+            "win_rate": 0.5,
+            "n_days": 250,
+            "final_nav": 0.9875
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -31.65,
+            "cagr_pct": -31.86,
+            "sharpe_ratio": -8.27,
+            "hit_rate": 0.5194,
+            "annual_vol_pct": 4.62,
+            "max_drawdown_pct": 32.06,
+            "win_rate": 0.24,
+            "n_days": 250,
+            "final_nav": 0.6835
+          },
+          "top30": {
+            "total_return_pct": -23.1,
+            "cagr_pct": -23.27,
+            "sharpe_ratio": -2.83,
+            "hit_rate": 0.537,
+            "annual_vol_pct": 9.19,
+            "max_drawdown_pct": 24.63,
+            "win_rate": 0.364,
+            "n_days": 250,
+            "final_nav": 0.769
+          }
+        }
+      }
+    },
+    {
+      "fold": 2,
+      "train_period": "2006-12-22 ~ 2010-10-04",
+      "test_period": "2010-10-05 ~ 2011-09-15",
+      "n_test": 250,
+      "hit_ccy": 0.5164,
+      "hit_55": 0.5035,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 5.07,
+            "cagr_pct": 5.11,
+            "sharpe_ratio": 1.1,
+            "hit_rate": 0.5035,
+            "annual_vol_pct": 4.65,
+            "max_drawdown_pct": 3.77,
+            "win_rate": 0.52,
+            "n_days": 250,
+            "final_nav": 1.0507
+          },
+          "top30": {
+            "total_return_pct": 3.33,
+            "cagr_pct": 3.36,
+            "sharpe_ratio": 0.43,
+            "hit_rate": 0.509,
+            "annual_vol_pct": 8.42,
+            "max_drawdown_pct": 8.57,
+            "win_rate": 0.508,
+            "n_days": 250,
+            "final_nav": 1.0333
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": -18.18,
+            "cagr_pct": -18.31,
+            "sharpe_ratio": -4.33,
+            "hit_rate": 0.5035,
+            "annual_vol_pct": 4.65,
+            "max_drawdown_pct": 19.19,
+            "win_rate": 0.348,
+            "n_days": 250,
+            "final_nav": 0.8182
+          },
+          "top30": {
+            "total_return_pct": -19.53,
+            "cagr_pct": -19.67,
+            "sharpe_ratio": -2.56,
+            "hit_rate": 0.509,
+            "annual_vol_pct": 8.42,
+            "max_drawdown_pct": 22.39,
+            "win_rate": 0.44,
+            "n_days": 250,
+            "final_nav": 0.8047
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -36.3,
+            "cagr_pct": -36.53,
+            "sharpe_ratio": -9.75,
+            "hit_rate": 0.5035,
+            "annual_vol_pct": 4.65,
+            "max_drawdown_pct": 36.31,
+            "win_rate": 0.228,
+            "n_days": 250,
+            "final_nav": 0.637
+          },
+          "top30": {
+            "total_return_pct": -37.35,
+            "cagr_pct": -37.59,
+            "sharpe_ratio": -5.55,
+            "hit_rate": 0.509,
+            "annual_vol_pct": 8.42,
+            "max_drawdown_pct": 38.79,
+            "win_rate": 0.352,
+            "n_days": 250,
+            "final_nav": 0.6265
+          }
+        }
+      }
+    },
+    {
+      "fold": 3,
+      "train_period": "2007-12-03 ~ 2011-09-15",
+      "test_period": "2011-09-16 ~ 2012-08-24",
+      "n_test": 250,
+      "hit_ccy": 0.6236,
+      "hit_55": 0.5811,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 42.9,
+            "cagr_pct": 43.31,
+            "sharpe_ratio": 8.88,
+            "hit_rate": 0.5811,
+            "annual_vol_pct": 4.06,
+            "max_drawdown_pct": 0.92,
+            "win_rate": 0.696,
+            "n_days": 250,
+            "final_nav": 1.429
+          },
+          "top30": {
+            "total_return_pct": 90.61,
+            "cagr_pct": 91.59,
+            "sharpe_ratio": 8.8,
+            "hit_rate": 0.642,
+            "annual_vol_pct": 7.43,
+            "max_drawdown_pct": 1.27,
+            "win_rate": 0.688,
+            "n_days": 250,
+            "final_nav": 1.9061
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 11.31,
+            "cagr_pct": 11.41,
+            "sharpe_ratio": 2.68,
+            "hit_rate": 0.5811,
+            "annual_vol_pct": 4.06,
+            "max_drawdown_pct": 2.48,
+            "win_rate": 0.532,
+            "n_days": 250,
+            "final_nav": 1.1131
+          },
+          "top30": {
+            "total_return_pct": 48.52,
+            "cagr_pct": 48.99,
+            "sharpe_ratio": 5.41,
+            "hit_rate": 0.642,
+            "annual_vol_pct": 7.43,
+            "max_drawdown_pct": 2.27,
+            "win_rate": 0.612,
+            "n_days": 250,
+            "final_nav": 1.4852
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -13.31,
+            "cagr_pct": -13.41,
+            "sharpe_ratio": -3.52,
+            "hit_rate": 0.5811,
+            "annual_vol_pct": 4.06,
+            "max_drawdown_pct": 16.47,
+            "win_rate": 0.352,
+            "n_days": 250,
+            "final_nav": 0.8669
+          },
+          "top30": {
+            "total_return_pct": 15.7,
+            "cagr_pct": 15.83,
+            "sharpe_ratio": 2.02,
+            "hit_rate": 0.642,
+            "annual_vol_pct": 7.43,
+            "max_drawdown_pct": 4.32,
+            "win_rate": 0.516,
+            "n_days": 250,
+            "final_nav": 1.157
+          }
+        }
+      }
+    },
+    {
+      "fold": 4,
+      "train_period": "2008-11-12 ~ 2012-08-24",
+      "test_period": "2012-08-27 ~ 2013-08-06",
+      "n_test": 250,
+      "hit_ccy": 0.5792,
+      "hit_55": 0.5814,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 40.25,
+            "cagr_pct": 40.63,
+            "sharpe_ratio": 9.44,
+            "hit_rate": 0.5814,
+            "annual_vol_pct": 3.62,
+            "max_drawdown_pct": 0.96,
+            "win_rate": 0.728,
+            "n_days": 250,
+            "final_nav": 1.4025
+          },
+          "top30": {
+            "total_return_pct": 89.1,
+            "cagr_pct": 90.07,
+            "sharpe_ratio": 9.26,
+            "hit_rate": 0.642,
+            "annual_vol_pct": 6.97,
+            "max_drawdown_pct": 1.75,
+            "win_rate": 0.704,
+            "n_days": 250,
+            "final_nav": 1.891
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 9.25,
+            "cagr_pct": 9.33,
+            "sharpe_ratio": 2.48,
+            "hit_rate": 0.5814,
+            "annual_vol_pct": 3.62,
+            "max_drawdown_pct": 2.27,
+            "win_rate": 0.552,
+            "n_days": 250,
+            "final_nav": 1.0925
+          },
+          "top30": {
+            "total_return_pct": 47.35,
+            "cagr_pct": 47.81,
+            "sharpe_ratio": 5.64,
+            "hit_rate": 0.642,
+            "annual_vol_pct": 6.97,
+            "max_drawdown_pct": 1.94,
+            "win_rate": 0.632,
+            "n_days": 250,
+            "final_nav": 1.4735
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -14.92,
+            "cagr_pct": -15.03,
+            "sharpe_ratio": -4.48,
+            "hit_rate": 0.5814,
+            "annual_vol_pct": 3.62,
+            "max_drawdown_pct": 14.92,
+            "win_rate": 0.372,
+            "n_days": 250,
+            "final_nav": 0.8508
+          },
+          "top30": {
+            "total_return_pct": 14.78,
+            "cagr_pct": 14.91,
+            "sharpe_ratio": 2.03,
+            "hit_rate": 0.642,
+            "annual_vol_pct": 6.97,
+            "max_drawdown_pct": 3.56,
+            "win_rate": 0.54,
+            "n_days": 250,
+            "final_nav": 1.1478
+          }
+        }
+      }
+    },
+    {
+      "fold": 5,
+      "train_period": "2009-10-23 ~ 2013-08-06",
+      "test_period": "2013-08-07 ~ 2014-07-15",
+      "n_test": 250,
+      "hit_ccy": 0.5936,
+      "hit_55": 0.5969,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 39.71,
+            "cagr_pct": 40.08,
+            "sharpe_ratio": 12.61,
+            "hit_rate": 0.5969,
+            "annual_vol_pct": 2.68,
+            "max_drawdown_pct": 0.33,
+            "win_rate": 0.792,
+            "n_days": 250,
+            "final_nav": 1.3971
+          },
+          "top30": {
+            "total_return_pct": 89.41,
+            "cagr_pct": 90.38,
+            "sharpe_ratio": 12.91,
+            "hit_rate": 0.6915,
+            "annual_vol_pct": 5.0,
+            "max_drawdown_pct": 0.59,
+            "win_rate": 0.784,
+            "n_days": 250,
+            "final_nav": 1.8941
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 8.83,
+            "cagr_pct": 8.9,
+            "sharpe_ratio": 3.2,
+            "hit_rate": 0.5969,
+            "annual_vol_pct": 2.68,
+            "max_drawdown_pct": 1.17,
+            "win_rate": 0.54,
+            "n_days": 250,
+            "final_nav": 1.0883
+          },
+          "top30": {
+            "total_return_pct": 47.59,
+            "cagr_pct": 48.05,
+            "sharpe_ratio": 7.87,
+            "hit_rate": 0.6915,
+            "annual_vol_pct": 5.0,
+            "max_drawdown_pct": 0.95,
+            "win_rate": 0.676,
+            "n_days": 250,
+            "final_nav": 1.4759
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -15.25,
+            "cagr_pct": -15.36,
+            "sharpe_ratio": -6.21,
+            "hit_rate": 0.5969,
+            "annual_vol_pct": 2.68,
+            "max_drawdown_pct": 15.35,
+            "win_rate": 0.316,
+            "n_days": 250,
+            "final_nav": 0.8475
+          },
+          "top30": {
+            "total_return_pct": 14.97,
+            "cagr_pct": 15.1,
+            "sharpe_ratio": 2.84,
+            "hit_rate": 0.6915,
+            "annual_vol_pct": 5.0,
+            "max_drawdown_pct": 2.06,
+            "win_rate": 0.54,
+            "n_days": 250,
+            "final_nav": 1.1497
+          }
+        }
+      }
+    },
+    {
+      "fold": 6,
+      "train_period": "2010-10-05 ~ 2014-07-15",
+      "test_period": "2014-07-16 ~ 2015-06-25",
+      "n_test": 250,
+      "hit_ccy": 0.6524,
+      "hit_55": 0.6332,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 77.85,
+            "cagr_pct": 78.68,
+            "sharpe_ratio": 12.22,
+            "hit_rate": 0.6332,
+            "annual_vol_pct": 4.76,
+            "max_drawdown_pct": 0.97,
+            "win_rate": 0.86,
+            "n_days": 250,
+            "final_nav": 1.7785
+          },
+          "top30": {
+            "total_return_pct": 197.17,
+            "cagr_pct": 199.77,
+            "sharpe_ratio": 9.06,
+            "hit_rate": 0.7352,
+            "annual_vol_pct": 12.23,
+            "max_drawdown_pct": 1.7,
+            "win_rate": 0.84,
+            "n_days": 250,
+            "final_nav": 2.9717
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 38.58,
+            "cagr_pct": 38.94,
+            "sharpe_ratio": 6.93,
+            "hit_rate": 0.6332,
+            "annual_vol_pct": 4.76,
+            "max_drawdown_pct": 1.57,
+            "win_rate": 0.684,
+            "n_days": 250,
+            "final_nav": 1.3858
+          },
+          "top30": {
+            "total_return_pct": 131.66,
+            "cagr_pct": 133.22,
+            "sharpe_ratio": 6.99,
+            "hit_rate": 0.7352,
+            "annual_vol_pct": 12.23,
+            "max_drawdown_pct": 2.39,
+            "win_rate": 0.772,
+            "n_days": 250,
+            "final_nav": 2.3166
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": 7.94,
+            "cagr_pct": 8.01,
+            "sharpe_ratio": 1.64,
+            "hit_rate": 0.6332,
+            "annual_vol_pct": 4.76,
+            "max_drawdown_pct": 4.56,
+            "win_rate": 0.448,
+            "n_days": 250,
+            "final_nav": 1.0794
+          },
+          "top30": {
+            "total_return_pct": 80.54,
+            "cagr_pct": 81.4,
+            "sharpe_ratio": 4.93,
+            "hit_rate": 0.7352,
+            "annual_vol_pct": 12.23,
+            "max_drawdown_pct": 3.74,
+            "win_rate": 0.656,
+            "n_days": 250,
+            "final_nav": 1.8054
+          }
+        }
+      }
+    },
+    {
+      "fold": 7,
+      "train_period": "2011-09-16 ~ 2015-06-25",
+      "test_period": "2015-06-26 ~ 2016-06-06",
+      "n_test": 250,
+      "hit_ccy": 0.656,
+      "hit_55": 0.6441,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 87.92,
+            "cagr_pct": 88.87,
+            "sharpe_ratio": 16.54,
+            "hit_rate": 0.6441,
+            "annual_vol_pct": 3.85,
+            "max_drawdown_pct": 0.75,
+            "win_rate": 0.88,
+            "n_days": 250,
+            "final_nav": 1.8792
+          },
+          "top30": {
+            "total_return_pct": 211.33,
+            "cagr_pct": 214.17,
+            "sharpe_ratio": 16.4,
+            "hit_rate": 0.7502,
+            "annual_vol_pct": 7.01,
+            "max_drawdown_pct": 1.06,
+            "win_rate": 0.868,
+            "n_days": 250,
+            "final_nav": 3.1133
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 46.42,
+            "cagr_pct": 46.87,
+            "sharpe_ratio": 10.0,
+            "hit_rate": 0.6441,
+            "annual_vol_pct": 3.85,
+            "max_drawdown_pct": 1.05,
+            "win_rate": 0.748,
+            "n_days": 250,
+            "final_nav": 1.4642
+          },
+          "top30": {
+            "total_return_pct": 142.71,
+            "cagr_pct": 144.44,
+            "sharpe_ratio": 12.8,
+            "hit_rate": 0.7502,
+            "annual_vol_pct": 7.01,
+            "max_drawdown_pct": 1.28,
+            "win_rate": 0.804,
+            "n_days": 250,
+            "final_nav": 2.4271
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": 14.06,
+            "cagr_pct": 14.18,
+            "sharpe_ratio": 3.46,
+            "hit_rate": 0.6441,
+            "annual_vol_pct": 3.85,
+            "max_drawdown_pct": 2.35,
+            "win_rate": 0.572,
+            "n_days": 250,
+            "final_nav": 1.1406
+          },
+          "top30": {
+            "total_return_pct": 89.17,
+            "cagr_pct": 90.13,
+            "sharpe_ratio": 9.21,
+            "hit_rate": 0.7502,
+            "annual_vol_pct": 7.01,
+            "max_drawdown_pct": 1.58,
+            "win_rate": 0.712,
+            "n_days": 250,
+            "final_nav": 1.8917
+          }
+        }
+      }
+    },
+    {
+      "fold": 8,
+      "train_period": "2012-08-27 ~ 2016-06-06",
+      "test_period": "2016-06-07 ~ 2017-05-17",
+      "n_test": 250,
+      "hit_ccy": 0.6616,
+      "hit_55": 0.6293,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 62.32,
+            "cagr_pct": 62.95,
+            "sharpe_ratio": 13.22,
+            "hit_rate": 0.6293,
+            "annual_vol_pct": 3.7,
+            "max_drawdown_pct": 0.41,
+            "win_rate": 0.836,
+            "n_days": 250,
+            "final_nav": 1.6232
+          },
+          "top30": {
+            "total_return_pct": 138.31,
+            "cagr_pct": 139.97,
+            "sharpe_ratio": 12.21,
+            "hit_rate": 0.7185,
+            "annual_vol_pct": 7.2,
+            "max_drawdown_pct": 0.93,
+            "win_rate": 0.844,
+            "n_days": 250,
+            "final_nav": 2.3831
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 26.46,
+            "cagr_pct": 26.7,
+            "sharpe_ratio": 6.41,
+            "hit_rate": 0.6293,
+            "annual_vol_pct": 3.7,
+            "max_drawdown_pct": 0.8,
+            "win_rate": 0.648,
+            "n_days": 250,
+            "final_nav": 1.2646
+          },
+          "top30": {
+            "total_return_pct": 85.73,
+            "cagr_pct": 86.65,
+            "sharpe_ratio": 8.71,
+            "hit_rate": 0.7185,
+            "annual_vol_pct": 7.2,
+            "max_drawdown_pct": 1.03,
+            "win_rate": 0.724,
+            "n_days": 250,
+            "final_nav": 1.8573
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -1.5,
+            "cagr_pct": -1.51,
+            "sharpe_ratio": -0.39,
+            "hit_rate": 0.6293,
+            "annual_vol_pct": 3.7,
+            "max_drawdown_pct": 6.81,
+            "win_rate": 0.436,
+            "n_days": 250,
+            "final_nav": 0.985
+          },
+          "top30": {
+            "total_return_pct": 44.72,
+            "cagr_pct": 45.15,
+            "sharpe_ratio": 5.21,
+            "hit_rate": 0.7185,
+            "annual_vol_pct": 7.2,
+            "max_drawdown_pct": 1.81,
+            "win_rate": 0.588,
+            "n_days": 250,
+            "final_nav": 1.4472
+          }
+        }
+      }
+    },
+    {
+      "fold": 9,
+      "train_period": "2013-08-07 ~ 2017-05-17",
+      "test_period": "2017-05-18 ~ 2018-04-27",
+      "n_test": 250,
+      "hit_ccy": 0.6376,
+      "hit_55": 0.6233,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 52.29,
+            "cagr_pct": 52.8,
+            "sharpe_ratio": 17.91,
+            "hit_rate": 0.6233,
+            "annual_vol_pct": 2.37,
+            "max_drawdown_pct": 0.16,
+            "win_rate": 0.852,
+            "n_days": 250,
+            "final_nav": 1.5229
+          },
+          "top30": {
+            "total_return_pct": 120.03,
+            "cagr_pct": 121.42,
+            "sharpe_ratio": 17.56,
+            "hit_rate": 0.7272,
+            "annual_vol_pct": 4.54,
+            "max_drawdown_pct": 0.52,
+            "win_rate": 0.872,
+            "n_days": 250,
+            "final_nav": 2.2003
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 18.64,
+            "cagr_pct": 18.8,
+            "sharpe_ratio": 7.28,
+            "hit_rate": 0.6233,
+            "annual_vol_pct": 2.37,
+            "max_drawdown_pct": 1.02,
+            "win_rate": 0.66,
+            "n_days": 250,
+            "final_nav": 1.1864
+          },
+          "top30": {
+            "total_return_pct": 71.47,
+            "cagr_pct": 72.21,
+            "sharpe_ratio": 12.01,
+            "hit_rate": 0.7272,
+            "annual_vol_pct": 4.54,
+            "max_drawdown_pct": 0.82,
+            "win_rate": 0.744,
+            "n_days": 250,
+            "final_nav": 1.7147
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -7.6,
+            "cagr_pct": -7.66,
+            "sharpe_ratio": -3.35,
+            "hit_rate": 0.6233,
+            "annual_vol_pct": 2.37,
+            "max_drawdown_pct": 8.01,
+            "win_rate": 0.38,
+            "n_days": 250,
+            "final_nav": 0.924
+          },
+          "top30": {
+            "total_return_pct": 33.6,
+            "cagr_pct": 33.91,
+            "sharpe_ratio": 6.46,
+            "hit_rate": 0.7272,
+            "annual_vol_pct": 4.54,
+            "max_drawdown_pct": 1.9,
+            "win_rate": 0.636,
+            "n_days": 250,
+            "final_nav": 1.336
+          }
+        }
+      }
+    },
+    {
+      "fold": 10,
+      "train_period": "2014-07-16 ~ 2018-04-27",
+      "test_period": "2018-04-30 ~ 2019-04-09",
+      "n_test": 250,
+      "hit_ccy": 0.6764,
+      "hit_55": 0.6471,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 59.79,
+            "cagr_pct": 60.39,
+            "sharpe_ratio": 17.47,
+            "hit_rate": 0.6471,
+            "annual_vol_pct": 2.71,
+            "max_drawdown_pct": 0.35,
+            "win_rate": 0.896,
+            "n_days": 250,
+            "final_nav": 1.5979
+          },
+          "top30": {
+            "total_return_pct": 138.44,
+            "cagr_pct": 140.1,
+            "sharpe_ratio": 16.75,
+            "hit_rate": 0.7692,
+            "annual_vol_pct": 5.25,
+            "max_drawdown_pct": 1.06,
+            "win_rate": 0.896,
+            "n_days": 250,
+            "final_nav": 2.3844
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 24.49,
+            "cagr_pct": 24.71,
+            "sharpe_ratio": 8.17,
+            "hit_rate": 0.6471,
+            "annual_vol_pct": 2.71,
+            "max_drawdown_pct": 0.55,
+            "win_rate": 0.7,
+            "n_days": 250,
+            "final_nav": 1.2449
+          },
+          "top30": {
+            "total_return_pct": 85.84,
+            "cagr_pct": 86.76,
+            "sharpe_ratio": 11.94,
+            "hit_rate": 0.7692,
+            "annual_vol_pct": 5.25,
+            "max_drawdown_pct": 1.26,
+            "win_rate": 0.816,
+            "n_days": 250,
+            "final_nav": 1.8584
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -3.04,
+            "cagr_pct": -3.06,
+            "sharpe_ratio": -1.13,
+            "hit_rate": 0.6471,
+            "annual_vol_pct": 2.71,
+            "max_drawdown_pct": 5.71,
+            "win_rate": 0.424,
+            "n_days": 250,
+            "final_nav": 0.9696
+          },
+          "top30": {
+            "total_return_pct": 44.8,
+            "cagr_pct": 45.23,
+            "sharpe_ratio": 7.14,
+            "hit_rate": 0.7692,
+            "annual_vol_pct": 5.25,
+            "max_drawdown_pct": 1.5,
+            "win_rate": 0.676,
+            "n_days": 250,
+            "final_nav": 1.448
+          }
+        }
+      }
+    },
+    {
+      "fold": 11,
+      "train_period": "2015-06-26 ~ 2019-04-09",
+      "test_period": "2019-04-10 ~ 2020-03-17",
+      "n_test": 250,
+      "hit_ccy": 0.6356,
+      "hit_55": 0.63,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 63.83,
+            "cagr_pct": 64.48,
+            "sharpe_ratio": 7.79,
+            "hit_rate": 0.63,
+            "annual_vol_pct": 6.42,
+            "max_drawdown_pct": 0.17,
+            "win_rate": 0.852,
+            "n_days": 250,
+            "final_nav": 1.6383
+          },
+          "top30": {
+            "total_return_pct": 150.5,
+            "cagr_pct": 152.35,
+            "sharpe_ratio": 8.15,
+            "hit_rate": 0.7458,
+            "annual_vol_pct": 11.45,
+            "max_drawdown_pct": 0.32,
+            "win_rate": 0.852,
+            "n_days": 250,
+            "final_nav": 2.505
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 27.64,
+            "cagr_pct": 27.89,
+            "sharpe_ratio": 3.87,
+            "hit_rate": 0.63,
+            "annual_vol_pct": 6.42,
+            "max_drawdown_pct": 0.57,
+            "win_rate": 0.612,
+            "n_days": 250,
+            "final_nav": 1.2764
+          },
+          "top30": {
+            "total_return_pct": 95.25,
+            "cagr_pct": 96.29,
+            "sharpe_ratio": 5.95,
+            "hit_rate": 0.7458,
+            "annual_vol_pct": 11.45,
+            "max_drawdown_pct": 0.61,
+            "win_rate": 0.74,
+            "n_days": 250,
+            "final_nav": 1.9525
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -0.59,
+            "cagr_pct": -0.59,
+            "sharpe_ratio": -0.06,
+            "hit_rate": 0.63,
+            "annual_vol_pct": 6.42,
+            "max_drawdown_pct": 10.72,
+            "win_rate": 0.352,
+            "n_days": 250,
+            "final_nav": 0.9941
+          },
+          "top30": {
+            "total_return_pct": 52.14,
+            "cagr_pct": 52.65,
+            "sharpe_ratio": 3.75,
+            "hit_rate": 0.7458,
+            "annual_vol_pct": 11.45,
+            "max_drawdown_pct": 1.01,
+            "win_rate": 0.608,
+            "n_days": 250,
+            "final_nav": 1.5214
+          }
+        }
+      }
+    },
+    {
+      "fold": 12,
+      "train_period": "2016-06-07 ~ 2020-03-17",
+      "test_period": "2020-03-18 ~ 2021-02-26",
+      "n_test": 250,
+      "hit_ccy": 0.6764,
+      "hit_55": 0.6393,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 82.42,
+            "cagr_pct": 83.3,
+            "sharpe_ratio": 5.82,
+            "hit_rate": 0.6393,
+            "annual_vol_pct": 10.51,
+            "max_drawdown_pct": 0.46,
+            "win_rate": 0.8,
+            "n_days": 250,
+            "final_nav": 1.8242
+          },
+          "top30": {
+            "total_return_pct": 223.07,
+            "cagr_pct": 226.11,
+            "sharpe_ratio": 3.68,
+            "hit_rate": 0.7058,
+            "annual_vol_pct": 33.46,
+            "max_drawdown_pct": 1.41,
+            "win_rate": 0.772,
+            "n_days": 250,
+            "final_nav": 3.2307
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 42.13,
+            "cagr_pct": 42.53,
+            "sharpe_ratio": 3.42,
+            "hit_rate": 0.6393,
+            "annual_vol_pct": 10.51,
+            "max_drawdown_pct": 0.86,
+            "win_rate": 0.66,
+            "n_days": 250,
+            "final_nav": 1.4213
+          },
+          "top30": {
+            "total_return_pct": 151.86,
+            "cagr_pct": 153.73,
+            "sharpe_ratio": 2.93,
+            "hit_rate": 0.7058,
+            "annual_vol_pct": 33.46,
+            "max_drawdown_pct": 1.7,
+            "win_rate": 0.7,
+            "n_days": 250,
+            "final_nav": 2.5186
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": 10.72,
+            "cagr_pct": 10.81,
+            "sharpe_ratio": 1.03,
+            "hit_rate": 0.6393,
+            "annual_vol_pct": 10.51,
+            "max_drawdown_pct": 3.35,
+            "win_rate": 0.456,
+            "n_days": 250,
+            "final_nav": 1.1072
+          },
+          "top30": {
+            "total_return_pct": 96.3,
+            "cagr_pct": 97.36,
+            "sharpe_ratio": 2.18,
+            "hit_rate": 0.7058,
+            "annual_vol_pct": 33.46,
+            "max_drawdown_pct": 2.59,
+            "win_rate": 0.604,
+            "n_days": 250,
+            "final_nav": 1.963
+          }
+        }
+      }
+    },
+    {
+      "fold": 13,
+      "train_period": "2017-05-18 ~ 2021-02-26",
+      "test_period": "2021-03-01 ~ 2022-02-08",
+      "n_test": 250,
+      "hit_ccy": 0.6852,
+      "hit_55": 0.6364,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 50.67,
+            "cagr_pct": 51.16,
+            "sharpe_ratio": 11.0,
+            "hit_rate": 0.6364,
+            "annual_vol_pct": 3.77,
+            "max_drawdown_pct": 1.65,
+            "win_rate": 0.856,
+            "n_days": 250,
+            "final_nav": 1.5067
+          },
+          "top30": {
+            "total_return_pct": 104.53,
+            "cagr_pct": 105.71,
+            "sharpe_ratio": 7.08,
+            "hit_rate": 0.7185,
+            "annual_vol_pct": 10.28,
+            "max_drawdown_pct": 5.84,
+            "win_rate": 0.828,
+            "n_days": 250,
+            "final_nav": 2.0453
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 17.37,
+            "cagr_pct": 17.53,
+            "sharpe_ratio": 4.31,
+            "hit_rate": 0.6364,
+            "annual_vol_pct": 3.77,
+            "max_drawdown_pct": 1.75,
+            "win_rate": 0.62,
+            "n_days": 250,
+            "final_nav": 1.1737
+          },
+          "top30": {
+            "total_return_pct": 59.38,
+            "cagr_pct": 59.98,
+            "sharpe_ratio": 4.63,
+            "hit_rate": 0.7185,
+            "annual_vol_pct": 10.28,
+            "max_drawdown_pct": 5.94,
+            "win_rate": 0.7,
+            "n_days": 250,
+            "final_nav": 1.5938
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -8.59,
+            "cagr_pct": -8.65,
+            "sharpe_ratio": -2.38,
+            "hit_rate": 0.6364,
+            "annual_vol_pct": 3.77,
+            "max_drawdown_pct": 9.2,
+            "win_rate": 0.38,
+            "n_days": 250,
+            "final_nav": 0.9141
+          },
+          "top30": {
+            "total_return_pct": 24.17,
+            "cagr_pct": 24.39,
+            "sharpe_ratio": 2.18,
+            "hit_rate": 0.7185,
+            "annual_vol_pct": 10.28,
+            "max_drawdown_pct": 6.04,
+            "win_rate": 0.584,
+            "n_days": 250,
+            "final_nav": 1.2417
+          }
+        }
+      }
+    },
+    {
+      "fold": 14,
+      "train_period": "2018-04-30 ~ 2022-02-08",
+      "test_period": "2022-02-09 ~ 2023-01-19",
+      "n_test": 250,
+      "hit_ccy": 0.7092,
+      "hit_55": 0.6473,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 94.11,
+            "cagr_pct": 95.14,
+            "sharpe_ratio": 14.73,
+            "hit_rate": 0.6473,
+            "annual_vol_pct": 4.55,
+            "max_drawdown_pct": 0.59,
+            "win_rate": 0.816,
+            "n_days": 250,
+            "final_nav": 1.9411
+          },
+          "top30": {
+            "total_return_pct": 218.26,
+            "cagr_pct": 221.22,
+            "sharpe_ratio": 14.59,
+            "hit_rate": 0.7315,
+            "annual_vol_pct": 8.04,
+            "max_drawdown_pct": 1.09,
+            "win_rate": 0.808,
+            "n_days": 250,
+            "final_nav": 3.1826
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 51.26,
+            "cagr_pct": 51.76,
+            "sharpe_ratio": 9.2,
+            "hit_rate": 0.6473,
+            "annual_vol_pct": 4.55,
+            "max_drawdown_pct": 0.89,
+            "win_rate": 0.724,
+            "n_days": 250,
+            "final_nav": 1.5126
+          },
+          "top30": {
+            "total_return_pct": 148.11,
+            "cagr_pct": 149.92,
+            "sharpe_ratio": 11.46,
+            "hit_rate": 0.7315,
+            "annual_vol_pct": 8.04,
+            "max_drawdown_pct": 1.29,
+            "win_rate": 0.76,
+            "n_days": 250,
+            "final_nav": 2.4811
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": 17.83,
+            "cagr_pct": 17.99,
+            "sharpe_ratio": 3.66,
+            "hit_rate": 0.6473,
+            "annual_vol_pct": 4.55,
+            "max_drawdown_pct": 1.79,
+            "win_rate": 0.556,
+            "n_days": 250,
+            "final_nav": 1.1783
+          },
+          "top30": {
+            "total_return_pct": 93.38,
+            "cagr_pct": 94.4,
+            "sharpe_ratio": 8.32,
+            "hit_rate": 0.7315,
+            "annual_vol_pct": 8.04,
+            "max_drawdown_pct": 1.48,
+            "win_rate": 0.696,
+            "n_days": 250,
+            "final_nav": 1.9338
+          }
+        }
+      }
+    },
+    {
+      "fold": 15,
+      "train_period": "2019-04-10 ~ 2023-01-19",
+      "test_period": "2023-01-20 ~ 2024-01-01",
+      "n_test": 250,
+      "hit_ccy": 0.6952,
+      "hit_55": 0.6346,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 60.31,
+            "cagr_pct": 60.92,
+            "sharpe_ratio": 14.36,
+            "hit_rate": 0.6346,
+            "annual_vol_pct": 3.32,
+            "max_drawdown_pct": 0.42,
+            "win_rate": 0.824,
+            "n_days": 250,
+            "final_nav": 1.6031
+          },
+          "top30": {
+            "total_return_pct": 126.58,
+            "cagr_pct": 128.07,
+            "sharpe_ratio": 12.73,
+            "hit_rate": 0.7085,
+            "annual_vol_pct": 6.51,
+            "max_drawdown_pct": 1.13,
+            "win_rate": 0.8,
+            "n_days": 250,
+            "final_nav": 2.2658
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 24.9,
+            "cagr_pct": 25.12,
+            "sharpe_ratio": 6.77,
+            "hit_rate": 0.6346,
+            "annual_vol_pct": 3.32,
+            "max_drawdown_pct": 0.88,
+            "win_rate": 0.672,
+            "n_days": 250,
+            "final_nav": 1.249
+          },
+          "top30": {
+            "total_return_pct": 76.58,
+            "cagr_pct": 77.39,
+            "sharpe_ratio": 8.85,
+            "hit_rate": 0.7085,
+            "annual_vol_pct": 6.51,
+            "max_drawdown_pct": 1.63,
+            "win_rate": 0.704,
+            "n_days": 250,
+            "final_nav": 1.7658
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -2.72,
+            "cagr_pct": -2.74,
+            "sharpe_ratio": -0.82,
+            "hit_rate": 0.6346,
+            "annual_vol_pct": 3.32,
+            "max_drawdown_pct": 4.81,
+            "win_rate": 0.448,
+            "n_days": 250,
+            "final_nav": 0.9728
+          },
+          "top30": {
+            "total_return_pct": 37.58,
+            "cagr_pct": 37.94,
+            "sharpe_ratio": 4.98,
+            "hit_rate": 0.7085,
+            "annual_vol_pct": 6.51,
+            "max_drawdown_pct": 2.15,
+            "win_rate": 0.612,
+            "n_days": 250,
+            "final_nav": 1.3758
+          }
+        }
+      }
+    },
+    {
+      "fold": 16,
+      "train_period": "2020-03-18 ~ 2024-01-01",
+      "test_period": "2024-01-02 ~ 2024-12-11",
+      "n_test": 250,
+      "hit_ccy": 0.662,
+      "hit_55": 0.6254,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 48.15,
+            "cagr_pct": 48.61,
+            "sharpe_ratio": 12.79,
+            "hit_rate": 0.6254,
+            "annual_vol_pct": 3.1,
+            "max_drawdown_pct": 0.3,
+            "win_rate": 0.812,
+            "n_days": 250,
+            "final_nav": 1.4815
+          },
+          "top30": {
+            "total_return_pct": 100.35,
+            "cagr_pct": 101.47,
+            "sharpe_ratio": 11.53,
+            "hit_rate": 0.697,
+            "annual_vol_pct": 6.1,
+            "max_drawdown_pct": 1.08,
+            "win_rate": 0.792,
+            "n_days": 250,
+            "final_nav": 2.0035
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 15.41,
+            "cagr_pct": 15.54,
+            "sharpe_ratio": 4.67,
+            "hit_rate": 0.6254,
+            "annual_vol_pct": 3.1,
+            "max_drawdown_pct": 0.74,
+            "win_rate": 0.592,
+            "n_days": 250,
+            "final_nav": 1.1541
+          },
+          "top30": {
+            "total_return_pct": 56.12,
+            "cagr_pct": 56.68,
+            "sharpe_ratio": 7.4,
+            "hit_rate": 0.697,
+            "annual_vol_pct": 6.1,
+            "max_drawdown_pct": 1.27,
+            "win_rate": 0.684,
+            "n_days": 250,
+            "final_nav": 1.5612
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -10.12,
+            "cagr_pct": -10.2,
+            "sharpe_ratio": -3.45,
+            "hit_rate": 0.6254,
+            "annual_vol_pct": 3.1,
+            "max_drawdown_pct": 10.45,
+            "win_rate": 0.352,
+            "n_days": 250,
+            "final_nav": 0.8988
+          },
+          "top30": {
+            "total_return_pct": 21.63,
+            "cagr_pct": 21.82,
+            "sharpe_ratio": 3.27,
+            "hit_rate": 0.697,
+            "annual_vol_pct": 6.1,
+            "max_drawdown_pct": 2.22,
+            "win_rate": 0.528,
+            "n_days": 250,
+            "final_nav": 1.2163
+          }
+        }
+      }
+    },
+    {
+      "fold": 17,
+      "train_period": "2021-03-01 ~ 2024-12-11",
+      "test_period": "2024-12-12 ~ 2025-11-20",
+      "n_test": 250,
+      "hit_ccy": 0.6728,
+      "hit_55": 0.6243,
+      "trading": {
+        "0bps": {
+          "all": {
+            "total_return_pct": 52.8,
+            "cagr_pct": 53.32,
+            "sharpe_ratio": 11.28,
+            "hit_rate": 0.6243,
+            "annual_vol_pct": 3.8,
+            "max_drawdown_pct": 0.58,
+            "win_rate": 0.812,
+            "n_days": 250,
+            "final_nav": 1.528
+          },
+          "top30": {
+            "total_return_pct": 127.17,
+            "cagr_pct": 128.66,
+            "sharpe_ratio": 11.73,
+            "hit_rate": 0.7282,
+            "annual_vol_pct": 7.08,
+            "max_drawdown_pct": 1.06,
+            "win_rate": 0.812,
+            "n_days": 250,
+            "final_nav": 2.2717
+          }
+        },
+        "5bps": {
+          "all": {
+            "total_return_pct": 19.04,
+            "cagr_pct": 19.21,
+            "sharpe_ratio": 4.65,
+            "hit_rate": 0.6243,
+            "annual_vol_pct": 3.8,
+            "max_drawdown_pct": 1.43,
+            "win_rate": 0.584,
+            "n_days": 250,
+            "final_nav": 1.1904
+          },
+          "top30": {
+            "total_return_pct": 77.04,
+            "cagr_pct": 77.85,
+            "sharpe_ratio": 8.17,
+            "hit_rate": 0.7282,
+            "annual_vol_pct": 7.08,
+            "max_drawdown_pct": 1.16,
+            "win_rate": 0.708,
+            "n_days": 250,
+            "final_nav": 1.7704
+          }
+        },
+        "10bps": {
+          "all": {
+            "total_return_pct": -7.29,
+            "cagr_pct": -7.34,
+            "sharpe_ratio": -1.99,
+            "hit_rate": 0.6243,
+            "annual_vol_pct": 3.8,
+            "max_drawdown_pct": 7.94,
+            "win_rate": 0.356,
+            "n_days": 250,
+            "final_nav": 0.9271
+          },
+          "top30": {
+            "total_return_pct": 37.94,
+            "cagr_pct": 38.3,
+            "sharpe_ratio": 4.62,
+            "hit_rate": 0.7282,
+            "annual_vol_pct": 7.08,
+            "max_drawdown_pct": 1.74,
+            "win_rate": 0.612,
+            "n_days": 250,
+            "final_nav": 1.3794
+          }
+        }
+      }
+    }
+  ]
+}

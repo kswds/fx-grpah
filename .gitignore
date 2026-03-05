@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# PyTorch
+*.pt
+*.pth
+
+# Data (keep factor_final_daily.csv tracked)
+# data/*.csv
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Results (optionally track)
+# results/saved_models/
+# results/figures/
+
+# Virtual environments
+venv/
+env/
+.env
+
+# Claude
+.claude/

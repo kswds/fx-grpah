@@ -1,0 +1,955 @@
+{
+  "timestamp": "2026-03-05T01:40:39.805029",
+  "data": {
+    "n_train": 4414,
+    "n_test": 1104,
+    "n_currencies": 11,
+    "currencies": [
+      "USD",
+      "EUR",
+      "JPY",
+      "GBP",
+      "CAD",
+      "AUD",
+      "CHF",
+      "NZD",
+      "SEK",
+      "NOK",
+      "CNY"
+    ]
+  },
+  "55_pairs": {
+    "0bps": {
+      "all": {
+        "total_return_pct": 567.82,
+        "cagr_pct": 54.25,
+        "sharpe_ratio": 11.58,
+        "hit_rate": 0.6121,
+        "annual_vol_pct": 3.75,
+        "max_drawdown_pct": 1.65,
+        "win_rate": 0.7953,
+        "n_days": 1104,
+        "final_nav": 6.6782,
+        "n_pairs_traded": 55,
+        "filter_pct": 1.0
+      },
+      "top50pct": {
+        "total_return_pct": 1914.03,
+        "cagr_pct": 98.46,
+        "sharpe_ratio": 11.15,
+        "hit_rate": 0.6766,
+        "annual_vol_pct": 6.17,
+        "max_drawdown_pct": 3.42,
+        "win_rate": 0.7962,
+        "n_days": 1104,
+        "final_nav": 20.1403,
+        "n_pairs_traded": 27,
+        "filter_pct": 0.5
+      },
+      "top30pct": {
+        "total_return_pct": 3602.97,
+        "cagr_pct": 128.05,
+        "sharpe_ratio": 10.23,
+        "hit_rate": 0.7027,
+        "annual_vol_pct": 8.1,
+        "max_drawdown_pct": 5.86,
+        "win_rate": 0.8025,
+        "n_days": 1104,
+        "final_nav": 37.0297,
+        "n_pairs_traded": 16,
+        "filter_pct": 0.3
+      },
+      "top20pct": {
+        "total_return_pct": 5130.38,
+        "cagr_pct": 146.76,
+        "sharpe_ratio": 9.15,
+        "hit_rate": 0.7139,
+        "annual_vol_pct": 9.94,
+        "max_drawdown_pct": 8.6,
+        "win_rate": 0.7989,
+        "n_days": 1104,
+        "final_nav": 52.3038,
+        "n_pairs_traded": 11,
+        "filter_pct": 0.2
+      },
+      "top10pct": {
+        "total_return_pct": 8783.71,
+        "cagr_pct": 178.48,
+        "sharpe_ratio": 9.01,
+        "hit_rate": 0.7306,
+        "annual_vol_pct": 11.46,
+        "max_drawdown_pct": 9.34,
+        "win_rate": 0.7708,
+        "n_days": 1104,
+        "final_nav": 88.8371,
+        "n_pairs_traded": 5,
+        "filter_pct": 0.1
+      },
+      "top5pct": {
+        "total_return_pct": 15113.09,
+        "cagr_pct": 214.86,
+        "sharpe_ratio": 8.85,
+        "hit_rate": 0.7432,
+        "annual_vol_pct": 13.09,
+        "max_drawdown_pct": 9.31,
+        "win_rate": 0.7545,
+        "n_days": 1104,
+        "final_nav": 152.1309,
+        "n_pairs_traded": 2,
+        "filter_pct": 0.05
+      }
+    },
+    "5bps": {
+      "all": {
+        "total_return_pct": 121.71,
+        "cagr_pct": 19.93,
+        "sharpe_ratio": 4.86,
+        "hit_rate": 0.6121,
+        "annual_vol_pct": 3.75,
+        "max_drawdown_pct": 1.8,
+        "win_rate": 0.6114,
+        "n_days": 1104,
+        "final_nav": 2.2171,
+        "n_pairs_traded": 55,
+        "filter_pct": 1.0
+      },
+      "top50pct": {
+        "total_return_pct": 569.37,
+        "cagr_pct": 54.34,
+        "sharpe_ratio": 7.07,
+        "hit_rate": 0.6766,
+        "annual_vol_pct": 6.17,
+        "max_drawdown_pct": 3.56,
+        "win_rate": 0.683,
+        "n_days": 1104,
+        "final_nav": 6.6937,
+        "n_pairs_traded": 27,
+        "filter_pct": 0.5
+      },
+      "top30pct": {
+        "total_return_pct": 1131.44,
+        "cagr_pct": 77.38,
+        "sharpe_ratio": 7.12,
+        "hit_rate": 0.7027,
+        "annual_vol_pct": 8.1,
+        "max_drawdown_pct": 6.05,
+        "win_rate": 0.7074,
+        "n_days": 1104,
+        "final_nav": 12.3144,
+        "n_pairs_traded": 16,
+        "filter_pct": 0.3
+      },
+      "top20pct": {
+        "total_return_pct": 1639.96,
+        "cagr_pct": 91.94,
+        "sharpe_ratio": 6.62,
+        "hit_rate": 0.7139,
+        "annual_vol_pct": 9.94,
+        "max_drawdown_pct": 8.87,
+        "win_rate": 0.7083,
+        "n_days": 1104,
+        "final_nav": 17.3996,
+        "n_pairs_traded": 11,
+        "filter_pct": 0.2
+      },
+      "top10pct": {
+        "total_return_pct": 2856.85,
+        "cagr_pct": 116.64,
+        "sharpe_ratio": 6.81,
+        "hit_rate": 0.7306,
+        "annual_vol_pct": 11.46,
+        "max_drawdown_pct": 9.56,
+        "win_rate": 0.7083,
+        "n_days": 1104,
+        "final_nav": 29.5685,
+        "n_pairs_traded": 5,
+        "filter_pct": 0.1
+      },
+      "top5pct": {
+        "total_return_pct": 4966.17,
+        "cagr_pct": 144.97,
+        "sharpe_ratio": 6.92,
+        "hit_rate": 0.7432,
+        "annual_vol_pct": 13.09,
+        "max_drawdown_pct": 9.41,
+        "win_rate": 0.7002,
+        "n_days": 1104,
+        "final_nav": 50.6617,
+        "n_pairs_traded": 2,
+        "filter_pct": 0.05
+      }
+    },
+    "10bps": {
+      "all": {
+        "total_return_pct": -26.48,
+        "cagr_pct": -6.78,
+        "sharpe_ratio": -1.85,
+        "hit_rate": 0.6121,
+        "annual_vol_pct": 3.75,
+        "max_drawdown_pct": 33.2,
+        "win_rate": 0.3859,
+        "n_days": 1104,
+        "final_nav": 0.7352,
+        "n_pairs_traded": 55,
+        "filter_pct": 1.0
+      },
+      "top50pct": {
+        "total_return_pct": 122.22,
+        "cagr_pct": 19.99,
+        "sharpe_ratio": 2.98,
+        "hit_rate": 0.6766,
+        "annual_vol_pct": 6.17,
+        "max_drawdown_pct": 4.4,
+        "win_rate": 0.5453,
+        "n_days": 1104,
+        "final_nav": 2.2222,
+        "n_pairs_traded": 27,
+        "filter_pct": 0.5
+      },
+      "top30pct": {
+        "total_return_pct": 309.07,
+        "cagr_pct": 37.93,
+        "sharpe_ratio": 4.01,
+        "hit_rate": 0.7027,
+        "annual_vol_pct": 8.1,
+        "max_drawdown_pct": 6.34,
+        "win_rate": 0.5942,
+        "n_days": 1104,
+        "final_nav": 4.0907,
+        "n_pairs_traded": 16,
+        "filter_pct": 0.3
+      },
+      "top20pct": {
+        "total_return_pct": 478.19,
+        "cagr_pct": 49.26,
+        "sharpe_ratio": 4.08,
+        "hit_rate": 0.7139,
+        "annual_vol_pct": 9.94,
+        "max_drawdown_pct": 9.15,
+        "win_rate": 0.6141,
+        "n_days": 1104,
+        "final_nav": 5.7819,
+        "n_pairs_traded": 11,
+        "filter_pct": 0.2
+      },
+      "top10pct": {
+        "total_return_pct": 883.07,
+        "cagr_pct": 68.49,
+        "sharpe_ratio": 4.61,
+        "hit_rate": 0.7306,
+        "annual_vol_pct": 11.46,
+        "max_drawdown_pct": 9.84,
+        "win_rate": 0.6286,
+        "n_days": 1104,
+        "final_nav": 9.8307,
+        "n_pairs_traded": 5,
+        "filter_pct": 0.1
+      },
+      "top5pct": {
+        "total_return_pct": 1585.26,
+        "cagr_pct": 90.55,
+        "sharpe_ratio": 5.0,
+        "hit_rate": 0.7432,
+        "annual_vol_pct": 13.09,
+        "max_drawdown_pct": 9.64,
+        "win_rate": 0.6359,
+        "n_days": 1104,
+        "final_nav": 16.8526,
+        "n_pairs_traded": 2,
+        "filter_pct": 0.05
+      }
+    }
+  },
+  "45_pairs_no_usd": {
+    "0bps": {
+      "all": {
+        "total_return_pct": 497.38,
+        "cagr_pct": 50.38,
+        "sharpe_ratio": 10.74,
+        "hit_rate": 0.603,
+        "annual_vol_pct": 3.81,
+        "max_drawdown_pct": 1.82,
+        "win_rate": 0.7799,
+        "n_days": 1104,
+        "final_nav": 5.9738,
+        "n_pairs_traded": 45,
+        "filter_pct": 1.0
+      },
+      "top50pct": {
+        "total_return_pct": 1596.41,
+        "cagr_pct": 90.83,
+        "sharpe_ratio": 10.28,
+        "hit_rate": 0.6637,
+        "annual_vol_pct": 6.31,
+        "max_drawdown_pct": 3.78,
+        "win_rate": 0.7853,
+        "n_days": 1104,
+        "final_nav": 16.9641,
+        "n_pairs_traded": 22,
+        "filter_pct": 0.5
+      },
+      "top30pct": {
+        "total_return_pct": 3037.34,
+        "cagr_pct": 119.59,
+        "sharpe_ratio": 9.37,
+        "hit_rate": 0.6912,
+        "annual_vol_pct": 8.44,
+        "max_drawdown_pct": 6.51,
+        "win_rate": 0.7889,
+        "n_days": 1104,
+        "final_nav": 31.3734,
+        "n_pairs_traded": 13,
+        "filter_pct": 0.3
+      },
+      "top20pct": {
+        "total_return_pct": 4160.46,
+        "cagr_pct": 135.47,
+        "sharpe_ratio": 8.28,
+        "hit_rate": 0.7022,
+        "annual_vol_pct": 10.42,
+        "max_drawdown_pct": 9.6,
+        "win_rate": 0.7781,
+        "n_days": 1104,
+        "final_nav": 42.6046,
+        "n_pairs_traded": 9,
+        "filter_pct": 0.2
+      },
+      "top10pct": {
+        "total_return_pct": 7352.18,
+        "cagr_pct": 167.53,
+        "sharpe_ratio": 8.59,
+        "hit_rate": 0.7185,
+        "annual_vol_pct": 11.56,
+        "max_drawdown_pct": 9.34,
+        "win_rate": 0.7563,
+        "n_days": 1104,
+        "final_nav": 74.5218,
+        "n_pairs_traded": 4,
+        "filter_pct": 0.1
+      },
+      "top5pct": {
+        "total_return_pct": 10371.68,
+        "cagr_pct": 189.13,
+        "sharpe_ratio": 8.33,
+        "hit_rate": 0.7269,
+        "annual_vol_pct": 12.88,
+        "max_drawdown_pct": 9.31,
+        "win_rate": 0.7409,
+        "n_days": 1104,
+        "final_nav": 104.7168,
+        "n_pairs_traded": 2,
+        "filter_pct": 0.05
+      }
+    },
+    "5bps": {
+      "all": {
+        "total_return_pct": 98.3,
+        "cagr_pct": 16.91,
+        "sharpe_ratio": 4.12,
+        "hit_rate": 0.603,
+        "annual_vol_pct": 3.81,
+        "max_drawdown_pct": 1.97,
+        "win_rate": 0.596,
+        "n_days": 1104,
+        "final_nav": 1.983,
+        "n_pairs_traded": 45,
+        "filter_pct": 1.0
+      },
+      "top50pct": {
+        "total_return_pct": 463.71,
+        "cagr_pct": 48.4,
+        "sharpe_ratio": 6.29,
+        "hit_rate": 0.6637,
+        "annual_vol_pct": 6.31,
+        "max_drawdown_pct": 3.94,
+        "win_rate": 0.6667,
+        "n_days": 1104,
+        "final_nav": 5.6371,
+        "n_pairs_traded": 22,
+        "filter_pct": 0.5
+      },
+      "top30pct": {
+        "total_return_pct": 943.16,
+        "cagr_pct": 70.78,
+        "sharpe_ratio": 6.39,
+        "hit_rate": 0.6912,
+        "annual_vol_pct": 8.44,
+        "max_drawdown_pct": 6.77,
+        "win_rate": 0.6938,
+        "n_days": 1104,
+        "final_nav": 10.4316,
+        "n_pairs_traded": 13,
+        "filter_pct": 0.3
+      },
+      "top20pct": {
+        "total_return_pct": 1317.01,
+        "cagr_pct": 83.15,
+        "sharpe_ratio": 5.87,
+        "hit_rate": 0.7022,
+        "annual_vol_pct": 10.42,
+        "max_drawdown_pct": 9.88,
+        "win_rate": 0.6929,
+        "n_days": 1104,
+        "final_nav": 14.1701,
+        "n_pairs_traded": 9,
+        "filter_pct": 0.2
+      },
+      "top10pct": {
+        "total_return_pct": 2379.93,
+        "cagr_pct": 108.11,
+        "sharpe_ratio": 6.41,
+        "hit_rate": 0.7185,
+        "annual_vol_pct": 11.56,
+        "max_drawdown_pct": 9.55,
+        "win_rate": 0.6947,
+        "n_days": 1104,
+        "final_nav": 24.7993,
+        "n_pairs_traded": 4,
+        "filter_pct": 0.1
+      },
+      "top5pct": {
+        "total_return_pct": 3385.92,
+        "cagr_pct": 124.93,
+        "sharpe_ratio": 6.37,
+        "hit_rate": 0.7269,
+        "annual_vol_pct": 12.88,
+        "max_drawdown_pct": 9.41,
+        "win_rate": 0.6812,
+        "n_days": 1104,
+        "final_nav": 34.8592,
+        "n_pairs_traded": 2,
+        "filter_pct": 0.05
+      }
+    },
+    "10bps": {
+      "all": {
+        "total_return_pct": -34.25,
+        "cagr_pct": -9.13,
+        "sharpe_ratio": -2.49,
+        "hit_rate": 0.603,
+        "annual_vol_pct": 3.81,
+        "max_drawdown_pct": 38.21,
+        "win_rate": 0.3741,
+        "n_days": 1104,
+        "final_nav": 0.6575,
+        "n_pairs_traded": 45,
+        "filter_pct": 1.0
+      },
+      "top50pct": {
+        "total_return_pct": 87.11,
+        "cagr_pct": 15.37,
+        "sharpe_ratio": 2.3,
+        "hit_rate": 0.6637,
+        "annual_vol_pct": 6.31,
+        "max_drawdown_pct": 6.04,
+        "win_rate": 0.5281,
+        "n_days": 1104,
+        "final_nav": 1.8711,
+        "n_pairs_traded": 22,
+        "filter_pct": 0.5
+      },
+      "top30pct": {
+        "total_return_pct": 246.46,
+        "cagr_pct": 32.8,
+        "sharpe_ratio": 3.4,
+        "hit_rate": 0.6912,
+        "annual_vol_pct": 8.44,
+        "max_drawdown_pct": 7.06,
+        "win_rate": 0.5743,
+        "n_days": 1104,
+        "final_nav": 3.4646,
+        "n_pairs_traded": 13,
+        "filter_pct": 0.3
+      },
+      "top20pct": {
+        "total_return_pct": 370.78,
+        "cagr_pct": 42.42,
+        "sharpe_ratio": 3.45,
+        "hit_rate": 0.7022,
+        "annual_vol_pct": 10.42,
+        "max_drawdown_pct": 10.16,
+        "win_rate": 0.5906,
+        "n_days": 1104,
+        "final_nav": 4.7078,
+        "n_pairs_traded": 9,
+        "filter_pct": 0.2
+      },
+      "top10pct": {
+        "total_return_pct": 724.37,
+        "cagr_pct": 61.85,
+        "sharpe_ratio": 4.23,
+        "hit_rate": 0.7185,
+        "annual_vol_pct": 11.56,
+        "max_drawdown_pct": 9.83,
+        "win_rate": 0.6259,
+        "n_days": 1104,
+        "final_nav": 8.2437,
+        "n_pairs_traded": 4,
+        "filter_pct": 0.1
+      },
+      "top5pct": {
+        "total_return_pct": 1059.16,
+        "cagr_pct": 74.95,
+        "sharpe_ratio": 4.41,
+        "hit_rate": 0.7269,
+        "annual_vol_pct": 12.88,
+        "max_drawdown_pct": 9.64,
+        "win_rate": 0.6187,
+        "n_days": 1104,
+        "final_nav": 11.5916,
+        "n_pairs_traded": 2,
+        "filter_pct": 0.05
+      }
+    }
+  },
+  "45_pairs_quintile": {
+    "0bps": {
+      "all": {
+        "total_return_pct": 497.38,
+        "cagr_pct": 50.38,
+        "sharpe_ratio": 10.74,
+        "hit_rate": 0.603,
+        "annual_vol_pct": 3.81,
+        "max_drawdown_pct": 1.82,
+        "win_rate": 0.7799,
+        "n_days": 1104,
+        "final_nav": 5.9738
+      },
+      "quintile_4": {
+        "total_return_pct": 776.79,
+        "cagr_pct": 64.14,
+        "sharpe_ratio": 10.74,
+        "hit_rate": 0.6261,
+        "annual_vol_pct": 4.63,
+        "max_drawdown_pct": 2.28,
+        "win_rate": 0.7817,
+        "n_days": 1104,
+        "final_nav": 8.7679
+      },
+      "quintile_3": {
+        "total_return_pct": 1229.04,
+        "cagr_pct": 80.49,
+        "sharpe_ratio": 10.58,
+        "hit_rate": 0.6509,
+        "annual_vol_pct": 5.6,
+        "max_drawdown_pct": 3.06,
+        "win_rate": 0.7826,
+        "n_days": 1104,
+        "final_nav": 13.2904
+      },
+      "quintile_2": {
+        "total_return_pct": 2098.64,
+        "cagr_pct": 102.47,
+        "sharpe_ratio": 10.0,
+        "hit_rate": 0.6778,
+        "annual_vol_pct": 7.09,
+        "max_drawdown_pct": 4.64,
+        "win_rate": 0.7908,
+        "n_days": 1104,
+        "final_nav": 21.9864
+      },
+      "quintile_1": {
+        "total_return_pct": 4160.46,
+        "cagr_pct": 135.47,
+        "sharpe_ratio": 8.28,
+        "hit_rate": 0.7022,
+        "annual_vol_pct": 10.42,
+        "max_drawdown_pct": 9.6,
+        "win_rate": 0.7781,
+        "n_days": 1104,
+        "final_nav": 42.6046
+      }
+    },
+    "5bps": {
+      "all": {
+        "total_return_pct": 98.3,
+        "cagr_pct": 16.91,
+        "sharpe_ratio": 4.12,
+        "hit_rate": 0.603,
+        "annual_vol_pct": 3.81,
+        "max_drawdown_pct": 1.97,
+        "win_rate": 0.596,
+        "n_days": 1104,
+        "final_nav": 1.983
+      },
+      "quintile_4": {
+        "total_return_pct": 191.16,
+        "cagr_pct": 27.63,
+        "sharpe_ratio": 5.3,
+        "hit_rate": 0.6261,
+        "annual_vol_pct": 4.63,
+        "max_drawdown_pct": 2.47,
+        "win_rate": 0.6277,
+        "n_days": 1104,
+        "final_nav": 2.9116
+      },
+      "quintile_3": {
+        "total_return_pct": 341.53,
+        "cagr_pct": 40.35,
+        "sharpe_ratio": 6.08,
+        "hit_rate": 0.6509,
+        "annual_vol_pct": 5.6,
+        "max_drawdown_pct": 3.21,
+        "win_rate": 0.654,
+        "n_days": 1104,
+        "final_nav": 4.4153
+      },
+      "quintile_2": {
+        "total_return_pct": 630.79,
+        "cagr_pct": 57.46,
+        "sharpe_ratio": 6.44,
+        "hit_rate": 0.6778,
+        "annual_vol_pct": 7.09,
+        "max_drawdown_pct": 4.82,
+        "win_rate": 0.6784,
+        "n_days": 1104,
+        "final_nav": 7.3079
+      },
+      "quintile_1": {
+        "total_return_pct": 1317.01,
+        "cagr_pct": 83.15,
+        "sharpe_ratio": 5.87,
+        "hit_rate": 0.7022,
+        "annual_vol_pct": 10.42,
+        "max_drawdown_pct": 9.88,
+        "win_rate": 0.6929,
+        "n_days": 1104,
+        "final_nav": 14.1701
+      }
+    },
+    "10bps": {
+      "all": {
+        "total_return_pct": -34.25,
+        "cagr_pct": -9.13,
+        "sharpe_ratio": -2.49,
+        "hit_rate": 0.603,
+        "annual_vol_pct": 3.81,
+        "max_drawdown_pct": 38.21,
+        "win_rate": 0.3741,
+        "n_days": 1104,
+        "final_nav": 0.6575
+      },
+      "quintile_4": {
+        "total_return_pct": -3.42,
+        "cagr_pct": -0.79,
+        "sharpe_ratio": -0.15,
+        "hit_rate": 0.6261,
+        "annual_vol_pct": 4.63,
+        "max_drawdown_pct": 21.21,
+        "win_rate": 0.4402,
+        "n_days": 1104,
+        "final_nav": 0.9658
+      },
+      "quintile_3": {
+        "total_return_pct": 46.52,
+        "cagr_pct": 9.11,
+        "sharpe_ratio": 1.58,
+        "hit_rate": 0.6509,
+        "annual_vol_pct": 5.6,
+        "max_drawdown_pct": 7.9,
+        "win_rate": 0.5045,
+        "n_days": 1104,
+        "final_nav": 1.4652
+      },
+      "quintile_2": {
+        "total_return_pct": 142.63,
+        "cagr_pct": 22.42,
+        "sharpe_ratio": 2.89,
+        "hit_rate": 0.6778,
+        "annual_vol_pct": 7.09,
+        "max_drawdown_pct": 5.11,
+        "win_rate": 0.5498,
+        "n_days": 1104,
+        "final_nav": 2.4263
+      },
+      "quintile_1": {
+        "total_return_pct": 370.78,
+        "cagr_pct": 42.42,
+        "sharpe_ratio": 3.45,
+        "hit_rate": 0.7022,
+        "annual_vol_pct": 10.42,
+        "max_drawdown_pct": 10.16,
+        "win_rate": 0.5906,
+        "n_days": 1104,
+        "final_nav": 4.7078
+      }
+    }
+  },
+  "pair_stats": {
+    "USD/EUR": {
+      "hit_rate": 0.683,
+      "avg_signal_strength": 0.001896,
+      "reliability": 0.001295
+    },
+    "USD/JPY": {
+      "hit_rate": 0.6812,
+      "avg_signal_strength": 0.002544,
+      "reliability": 0.001733
+    },
+    "USD/GBP": {
+      "hit_rate": 0.6685,
+      "avg_signal_strength": 0.001819,
+      "reliability": 0.001216
+    },
+    "USD/CAD": {
+      "hit_rate": 0.6531,
+      "avg_signal_strength": 0.001739,
+      "reliability": 0.001135
+    },
+    "USD/AUD": {
+      "hit_rate": 0.5145,
+      "avg_signal_strength": 0.00188,
+      "reliability": 0.000967
+    },
+    "USD/CHF": {
+      "hit_rate": 0.6531,
+      "avg_signal_strength": 0.002231,
+      "reliability": 0.001457
+    },
+    "USD/NZD": {
+      "hit_rate": 0.7156,
+      "avg_signal_strength": 0.003048,
+      "reliability": 0.002181
+    },
+    "USD/SEK": {
+      "hit_rate": 0.7373,
+      "avg_signal_strength": 0.00288,
+      "reliability": 0.002124
+    },
+    "USD/NOK": {
+      "hit_rate": 0.6793,
+      "avg_signal_strength": 0.003667,
+      "reliability": 0.002491
+    },
+    "USD/CNY": {
+      "hit_rate": 0.5453,
+      "avg_signal_strength": 0.000701,
+      "reliability": 0.000383
+    },
+    "EUR/JPY": {
+      "hit_rate": 0.5707,
+      "avg_signal_strength": 0.002453,
+      "reliability": 0.0014
+    },
+    "EUR/GBP": {
+      "hit_rate": 0.5824,
+      "avg_signal_strength": 0.001252,
+      "reliability": 0.000729
+    },
+    "EUR/CAD": {
+      "hit_rate": 0.5752,
+      "avg_signal_strength": 0.001288,
+      "reliability": 0.000741
+    },
+    "EUR/AUD": {
+      "hit_rate": 0.5842,
+      "avg_signal_strength": 0.00214,
+      "reliability": 0.00125
+    },
+    "EUR/CHF": {
+      "hit_rate": 0.5172,
+      "avg_signal_strength": 0.001489,
+      "reliability": 0.00077
+    },
+    "EUR/NZD": {
+      "hit_rate": 0.5861,
+      "avg_signal_strength": 0.001856,
+      "reliability": 0.001087
+    },
+    "EUR/SEK": {
+      "hit_rate": 0.6467,
+      "avg_signal_strength": 0.001523,
+      "reliability": 0.000985
+    },
+    "EUR/NOK": {
+      "hit_rate": 0.6042,
+      "avg_signal_strength": 0.002765,
+      "reliability": 0.00167
+    },
+    "EUR/CNY": {
+      "hit_rate": 0.6386,
+      "avg_signal_strength": 0.001932,
+      "reliability": 0.001233
+    },
+    "JPY/GBP": {
+      "hit_rate": 0.6005,
+      "avg_signal_strength": 0.002359,
+      "reliability": 0.001417
+    },
+    "JPY/CAD": {
+      "hit_rate": 0.6096,
+      "avg_signal_strength": 0.002543,
+      "reliability": 0.00155
+    },
+    "JPY/AUD": {
+      "hit_rate": 0.5842,
+      "avg_signal_strength": 0.002817,
+      "reliability": 0.001646
+    },
+    "JPY/CHF": {
+      "hit_rate": 0.5362,
+      "avg_signal_strength": 0.001829,
+      "reliability": 0.000981
+    },
+    "JPY/NZD": {
+      "hit_rate": 0.5888,
+      "avg_signal_strength": 0.002587,
+      "reliability": 0.001523
+    },
+    "JPY/SEK": {
+      "hit_rate": 0.625,
+      "avg_signal_strength": 0.002537,
+      "reliability": 0.001586
+    },
+    "JPY/NOK": {
+      "hit_rate": 0.5987,
+      "avg_signal_strength": 0.003453,
+      "reliability": 0.002068
+    },
+    "JPY/CNY": {
+      "hit_rate": 0.6458,
+      "avg_signal_strength": 0.002579,
+      "reliability": 0.001665
+    },
+    "GBP/CAD": {
+      "hit_rate": 0.5444,
+      "avg_signal_strength": 0.001135,
+      "reliability": 0.000618
+    },
+    "GBP/AUD": {
+      "hit_rate": 0.5779,
+      "avg_signal_strength": 0.002012,
+      "reliability": 0.001163
+    },
+    "GBP/CHF": {
+      "hit_rate": 0.5679,
+      "avg_signal_strength": 0.001698,
+      "reliability": 0.000964
+    },
+    "GBP/NZD": {
+      "hit_rate": 0.5915,
+      "avg_signal_strength": 0.001757,
+      "reliability": 0.001039
+    },
+    "GBP/SEK": {
+      "hit_rate": 0.6159,
+      "avg_signal_strength": 0.001673,
+      "reliability": 0.001031
+    },
+    "GBP/NOK": {
+      "hit_rate": 0.5942,
+      "avg_signal_strength": 0.002789,
+      "reliability": 0.001657
+    },
+    "GBP/CNY": {
+      "hit_rate": 0.6159,
+      "avg_signal_strength": 0.001864,
+      "reliability": 0.001148
+    },
+    "CAD/AUD": {
+      "hit_rate": 0.5507,
+      "avg_signal_strength": 0.002028,
+      "reliability": 0.001117
+    },
+    "CAD/CHF": {
+      "hit_rate": 0.5716,
+      "avg_signal_strength": 0.00167,
+      "reliability": 0.000955
+    },
+    "CAD/NZD": {
+      "hit_rate": 0.6486,
+      "avg_signal_strength": 0.001676,
+      "reliability": 0.001087
+    },
+    "CAD/SEK": {
+      "hit_rate": 0.6793,
+      "avg_signal_strength": 0.001812,
+      "reliability": 0.001231
+    },
+    "CAD/NOK": {
+      "hit_rate": 0.6033,
+      "avg_signal_strength": 0.002574,
+      "reliability": 0.001553
+    },
+    "CAD/CNY": {
+      "hit_rate": 0.6033,
+      "avg_signal_strength": 0.001722,
+      "reliability": 0.001039
+    },
+    "AUD/CHF": {
+      "hit_rate": 0.587,
+      "avg_signal_strength": 0.002439,
+      "reliability": 0.001432
+    },
+    "AUD/NZD": {
+      "hit_rate": 0.6549,
+      "avg_signal_strength": 0.002794,
+      "reliability": 0.00183
+    },
+    "AUD/SEK": {
+      "hit_rate": 0.6486,
+      "avg_signal_strength": 0.002813,
+      "reliability": 0.001824
+    },
+    "AUD/NOK": {
+      "hit_rate": 0.6178,
+      "avg_signal_strength": 0.003515,
+      "reliability": 0.002172
+    },
+    "AUD/CNY": {
+      "hit_rate": 0.5317,
+      "avg_signal_strength": 0.002027,
+      "reliability": 0.001078
+    },
+    "CHF/NZD": {
+      "hit_rate": 0.6214,
+      "avg_signal_strength": 0.001921,
+      "reliability": 0.001194
+    },
+    "CHF/SEK": {
+      "hit_rate": 0.6141,
+      "avg_signal_strength": 0.001782,
+      "reliability": 0.001095
+    },
+    "CHF/NOK": {
+      "hit_rate": 0.5806,
+      "avg_signal_strength": 0.003089,
+      "reliability": 0.001794
+    },
+    "CHF/CNY": {
+      "hit_rate": 0.606,
+      "avg_signal_strength": 0.002235,
+      "reliability": 0.001354
+    },
+    "NZD/SEK": {
+      "hit_rate": 0.6051,
+      "avg_signal_strength": 0.001515,
+      "reliability": 0.000917
+    },
+    "NZD/NOK": {
+      "hit_rate": 0.5634,
+      "avg_signal_strength": 0.002382,
+      "reliability": 0.001342
+    },
+    "NZD/CNY": {
+      "hit_rate": 0.6803,
+      "avg_signal_strength": 0.002932,
+      "reliability": 0.001994
+    },
+    "SEK/NOK": {
+      "hit_rate": 0.596,
+      "avg_signal_strength": 0.002112,
+      "reliability": 0.001259
+    },
+    "SEK/CNY": {
+      "hit_rate": 0.7011,
+      "avg_signal_strength": 0.002827,
+      "reliability": 0.001982
+    },
+    "NOK/CNY": {
+      "hit_rate": 0.6703,
+      "avg_signal_strength": 0.00364,
+      "reliability": 0.00244
+    }
+  }
+}
