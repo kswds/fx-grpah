@@ -1,0 +1,3 @@
+statsmodels unavailable or regression failed.
+
+No module named 'statsmodels'

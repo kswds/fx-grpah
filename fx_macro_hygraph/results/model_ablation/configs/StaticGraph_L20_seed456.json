@@ -1,0 +1,113 @@
+{
+  "run_config": {
+    "model": "StaticGraph",
+    "lookback": "20",
+    "seed": 456,
+    "epochs": 80,
+    "batch_size": 128,
+    "hidden": 64,
+    "top_k": 6,
+    "lr": 0.0003,
+    "weight_decay": 0.0001,
+    "patience": 10,
+    "split": "602020",
+    "data_path": "C:\\Users\\\uae40\uc0c1\uc644\\Desktop\\final_github_share\\data\\factor_daily_legacy.csv"
+  },
+  "data_meta": {
+    "n_ccy": 11,
+    "usd_idx": 0,
+    "currencies": [
+      "USD",
+      "EUR",
+      "JPY",
+      "GBP",
+      "CAD",
+      "AUD",
+      "CHF",
+      "NZD",
+      "SEK",
+      "NOK",
+      "CNY"
+    ],
+    "macro_features": [
+      "Global_VIX",
+      "Global_Gold",
+      "Global_Oil",
+      "Global_Copper",
+      "Global_US2Y",
+      "Global_IronOre",
+      "Global_US10Y",
+      "Global_Shanghai",
+      "Global_SP500"
+    ],
+    "train_samples": 3310,
+    "val_samples": 1104,
+    "test_samples": 1104
+  },
+  "model_selection": {
+    "best_val_mse": 0.8053769469261169,
+    "best_epoch": 78
+  },
+  "metrics": {
+    "rmse": 0.0052528963424265385,
+    "mae": 0.003709519514814019,
+    "hit_ccy": 0.6319746376811595,
+    "hit_pair": 0.6013833992094861,
+    "extreme_rmse": 0.01193222776055336,
+    "extreme_hit": 0.8016304347826086,
+    "ic": 0.27181438304653993,
+    "sharpe": 10.205772044351532
+  },
+  "base_config": {
+    "file_path": "C:\\Users\\\uae40\uc0c1\uc644\\Desktop\\final_github_share\\data\\factor_daily_legacy.csv",
+    "seed": 42,
+    "lookback": 20,
+    "rv_window": 20,
+    "train_ratio": 0.6,
+    "val_ratio": 0.2,
+    "batch_size": 128,
+    "epochs": 80,
+    "lr": 0.0003,
+    "early_stopping_patience": 10,
+    "gnn_type": "gat",
+    "hidden": 64,
+    "heads": 4,
+    "hybrid_hidden": 64,
+    "dropout": 0.1,
+    "top_k": 6,
+    "lambda_var": 0.01,
+    "vicreg_gamma": 1.0,
+    "lambda_dir": 0.3,
+    "lambda_rank": 0.1,
+    "lambda_a_l1": 0.0001,
+    "ccys": [
+      "USD",
+      "EUR",
+      "JPY",
+      "GBP",
+      "CAD",
+      "AUD",
+      "CHF",
+      "NZD",
+      "SEK",
+      "NOK",
+      "CNY"
+    ],
+    "global_features": [
+      "Global_Gold",
+      "Global_VIX",
+      "Global_Oil",
+      "Global_US10Y",
+      "Global_Copper",
+      "Global_SP500",
+      "Global_US2Y",
+      "Global_Shanghai",
+      "Global_IronOre"
+    ],
+    "identifiability": "usd_pin",
+    "use_skip_connection": false,
+    "use_layer_norm": false,
+    "use_magnitude_head": false,
+    "top_k_portfolio": 3
+  }
+}

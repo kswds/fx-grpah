@@ -1,0 +1,2 @@
+D_F_mean_stress,D_F_mean_normal,D_F_stress_over_normal,large_update_threshold_q90,large_update_share_in_stress_days,large_update_share_in_normal_days,stress_share_among_large_updates
+0.6740242426416704,0.6413982869418684,1.0508669205437215,0.8542396724224091,0.117096018735363,0.08233532934131736,0.45045045045045046

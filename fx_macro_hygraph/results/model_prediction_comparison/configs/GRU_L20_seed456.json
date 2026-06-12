@@ -1,0 +1,13 @@
+﻿{
+    "train_params":  {
+                         "epochs":  80,
+                         "batch_size":  128,
+                         "hidden":  64,
+                         "top_k":  4,
+                         "lr":  0.0003,
+                         "weight_decay":  0.0001,
+                         "patience":  10
+                     },
+    "best_epoch":  54,
+    "best_val_mse":  0.8701210021972656
+}

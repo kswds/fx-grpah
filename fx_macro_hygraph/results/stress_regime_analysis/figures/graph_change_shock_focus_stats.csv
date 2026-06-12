@@ -1,0 +1,2 @@
+rolling_window,top_pct,threshold,high_change_days,stress_days,high_change_share,stress_share,stress_share_among_high_change,high_change_share_among_stress,high_change_share_among_normal
+20,0.15,0.718227942287922,166,427,0.1503623188405797,0.3867753623188406,0.6566265060240963,0.25526932084309134,0.08419497784342689

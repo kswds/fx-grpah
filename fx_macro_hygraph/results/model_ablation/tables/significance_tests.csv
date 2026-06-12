@@ -1,0 +1,17 @@
+﻿comparison,metric,test_stat,p_value,significance,lookback,seed
+Ours_vs_FiLMHyGraph,paired_sq_error,0.7601573355515554,0.4471605439885544,n.s.,20,42
+Ours_vs_FiLMHyGraph,paired_sq_error,0.6795540631878992,0.4967868645772402,n.s.,20,123
+Ours_vs_FiLMHyGraph,paired_sq_error,-1.487718553161229,0.13682513263226825,n.s.,20,456
+Ours_vs_StaticGraph,paired_sq_error,-1.9466967217258668,0.05157110488546546,*,20,42
+Ours_vs_StaticGraph,paired_sq_error,-3.5233588469545514,0.0004261140018635423,***,20,123
+Ours_vs_StaticGraph,paired_sq_error,-1.9070987384702052,0.056507802594302436,*,20,456
+Ours_vs_NoMacro,paired_sq_error,-8.850271222953447,0.0,***,20,42
+Ours_vs_NoMacro,paired_sq_error,-10.437928416081455,0.0,***,20,123
+Ours_vs_NoMacro,paired_sq_error,-11.200806386088964,0.0,***,20,456
+Ours_vs_LSTM,paired_sq_error,-9.299348911606783,0.0,***,20,42
+Ours_vs_LSTM,paired_sq_error,-9.30425338746614,0.0,***,20,123
+Ours_vs_LSTM,paired_sq_error,-9.803765598071024,0.0,***,20,456
+Ours_vs_MLP,paired_sq_error,-11.98937190323431,0.0,***,20,42
+Ours_vs_MLP,paired_sq_error,-10.783973090383332,0.0,***,20,123
+Ours_vs_MLP,paired_sq_error,-10.838772715273238,0.0,***,20,456
+
