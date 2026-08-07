@@ -1,0 +1,45 @@
+experiment:
+  universe_name: all10
+  currencies: [USD, EUR, JPY, GBP, CAD, AUD, KRW, CHF, NZD, SEK, NOK]
+  lookback: 10
+  split: [0.6, 0.2, 0.2]
+  seeds: [21, 42, 456]
+  baseline_models: [mlp, transformer, gnn, corrlstmgat, fxrp]
+
+data:
+  fx_data_path: data/processed/factor_daily_alligned_krw.csv
+  nonfx_data_path: data/processed/score_vA_nonfx_features.csv
+
+training:
+  hidden: 48
+  epochs: 80
+  batch_size: 128
+  lr: 0.0003
+  weight_decay: 0.0001
+  patience: 10
+  dropout: 0.25
+  lambda_dir: 0.10
+  lambda_rank: 0.08
+  lambda_component: 0.0001
+  lambda_smooth: 0.001
+  lambda_static: 0.001
+  lambda_sparse: 0.0001
+  lambda_spectral: 0.001
+  small_return_quantile: 0.40
+  selection_metric: mse_hit
+  hit_alpha: 0.01
+
+graph:
+  top_k: 3
+  graph_rank: 8
+  edge_dropout: 0.05
+  spectral_bound: 1.0
+  component_gate_type: sigmoid
+
+baselines:
+  corrlstmgat_architecture_order: lstm_then_gat
+  fxrp_num_layers: 3
+
+outputs:
+  prediction_root: results/repro_runs
+  report_dir: results/predictive_results
