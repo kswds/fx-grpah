@@ -19,17 +19,99 @@ Headline setting:
 - Max epochs: `80`
 - Early stopping patience: `10`
 
-## Shared Training Objective Used In The Reported Results
+## Training Objectives
 
-All reported predictive tables in this anonymous release use the same directional-core training objective as the common comparison anchor.
+### Shared Directional Core
 
-Specifically, the shared core objective is:
+All reported predictive experiments use the same directional-core objective as a common comparison anchor.
 
-- active-set filtering with `A = {(b, i) : |y_{b,i}| >= tau}`
-- threshold defined by `tau = Q0.40(|y_train_norm|)`
-- directional softplus loss on the active set only
+Specifically, the shared directional loss is defined using:
 
-In words, all reported experiments are aligned around the same `Q0.40` active directional core, so very small normalized returns are excluded from the core directional loss and the model is trained to focus on economically more meaningful directional moves.
+* active-set filtering with `A = {(b, i) : |y_{b,i}| >= tau}`
+* threshold `tau = Q0.40(|y_train_norm|)`
+* directional softplus loss evaluated only on the active set
+
+In words, the common directional core focuses training on economically more meaningful directional movements by excluding very small normalized returns from the directional loss. This same `Q0.40` active-set definition is used across `ARC_FX` and all trainable baselines to maintain a consistent predictive comparison.
+
+### ARC_FX End-to-End Objective
+
+While the directional term is shared across models, `ARC_FX` is trained with a model-specific end-to-end objective designed to jointly learn directional forecasts, economically interpretable component signals, and a stable sparse dynamic currency graph.
+
+The full training objective is
+
+[
+\mathcal{L}_{\mathrm{ARC_FX}}
+=============================
+
+\mathcal{L}*{\mathrm{dir}}
++
+\lambda*{\mathrm{comp}}\mathcal{R}*{\mathrm{comp}}
++
+\lambda*{\mathrm{smooth}}\mathcal{R}*{\mathrm{smooth}}
++
+\lambda*{\mathrm{stat}}\mathcal{R}*{\mathrm{stat}}
++
+\lambda*{\mathrm{sp}}\mathcal{R}*{\mathrm{sp}}
++
+\lambda*{\mathrm{spec}}\mathcal{R}_{\mathrm{spec}}.
+]
+
+Here, (\mathcal{L}_{\mathrm{dir}}) is the shared `Q0.40` active directional loss described above. The additional terms regularize the latent component decomposition and the learned time-varying graph:
+
+[
+\begin{aligned}
+\mathcal{R}*{\mathrm{comp}}
+&=
+\sum_m
+\left\langle
+\left(c_t^{(m)}\right)^2
+\right\rangle,
+&
+\mathcal{R}*{\mathrm{smooth}}
+&=
+\left\langle
+\left(A_t-A_{t-1}\right)^2
+\right\rangle,
+\
+\mathcal{R}*{\mathrm{stat}}
+&=
+\left\langle
+\left(A_t-\bar{A}\right)^2
+\right\rangle,
+&
+\mathcal{R}*{\mathrm{sp}}
+&=
+\left\langle
+\lvert A_t\rvert
+\right\rangle,
+\
+\mathcal{R}_{\mathrm{spec}}
+&=
+\operatorname{ReLU}
+\left(
+\sigma(\lvert A_t\rvert)-\rho
+\right)^2.
+\end{aligned}
+]
+
+where (\langle\cdot\rangle) denotes the mean over all entries, (\bar{A}) is the row-normalized static anchor constructed from (S), and (\sigma(\cdot)) denotes the spectral norm.
+
+The regularization terms serve distinct roles:
+
+* `R_comp` controls the scale of the decomposed latent component contributions.
+* `R_smooth` discourages abrupt changes in the learned dynamic graph across adjacent time steps.
+* `R_stat` softly anchors the dynamic graph to the static relational prior while still allowing time variation.
+* `R_sp` encourages sparse cross-currency connectivity.
+* `R_spec` penalizes excessive spectral magnitude of the learned adjacency and helps stabilize graph propagation.
+
+Thus, `ARC_FX` does not learn the forecasting target and graph structure independently. Its latent currency components, dynamic adjacency, and final directional forecasts are optimized jointly under a single end-to-end objective.
+
+### Baseline Training Objective
+
+For the trainable baselines (`MLP`, `Transformer`, `GNN`, `Corr-LSTM-GAT`, and `FXRP`), the comparison objective is the shared `Q0.40` active directional loss described above.
+
+The ARC_FX-specific component and graph regularizers are not applied to the baselines, since these terms correspond to architectural quantities that are specific to the proposed model. All other shared training conditions—including the data split, seed set, optimizer family, batch size, and early-stopping protocol—are kept aligned wherever applicable.
+
 
 ## Baselines
 
