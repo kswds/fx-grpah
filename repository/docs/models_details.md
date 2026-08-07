@@ -39,52 +39,51 @@ While the directional term is shared across models, `ARC_FX` is trained with a m
 
 The full training objective is
 
-[
-\mathcal{L}_{\mathrm{ARC_FX}}
-=============================
+$$
+\mathcal{L}_{\mathrm{ARC\_FX}}
+=
+\mathcal{L}_{\mathrm{dir}}
++
+\lambda_{\mathrm{comp}}\mathcal{R}_{\mathrm{comp}}
++
+\lambda_{\mathrm{smooth}}\mathcal{R}_{\mathrm{smooth}}
++
+\lambda_{\mathrm{stat}}\mathcal{R}_{\mathrm{stat}}
++
+\lambda_{\mathrm{sp}}\mathcal{R}_{\mathrm{sp}}
++
+\lambda_{\mathrm{spec}}\mathcal{R}_{\mathrm{spec}}.
+$$
 
-\mathcal{L}*{\mathrm{dir}}
-+
-\lambda*{\mathrm{comp}}\mathcal{R}*{\mathrm{comp}}
-+
-\lambda*{\mathrm{smooth}}\mathcal{R}*{\mathrm{smooth}}
-+
-\lambda*{\mathrm{stat}}\mathcal{R}*{\mathrm{stat}}
-+
-\lambda*{\mathrm{sp}}\mathcal{R}*{\mathrm{sp}}
-+
-\lambda*{\mathrm{spec}}\mathcal{R}_{\mathrm{spec}}.
-]
+Here, $\mathcal{L}_{\mathrm{dir}}$ is the shared `Q0.40` active directional loss described above. The additional terms regularize the latent component decomposition and the learned time-varying graph:
 
-Here, (\mathcal{L}_{\mathrm{dir}}) is the shared `Q0.40` active directional loss described above. The additional terms regularize the latent component decomposition and the learned time-varying graph:
-
-[
+$$
 \begin{aligned}
-\mathcal{R}*{\mathrm{comp}}
+\mathcal{R}_{\mathrm{comp}}
 &=
 \sum_m
 \left\langle
 \left(c_t^{(m)}\right)^2
 \right\rangle,
 &
-\mathcal{R}*{\mathrm{smooth}}
+\mathcal{R}_{\mathrm{smooth}}
 &=
 \left\langle
 \left(A_t-A_{t-1}\right)^2
 \right\rangle,
-\
-\mathcal{R}*{\mathrm{stat}}
+\\
+\mathcal{R}_{\mathrm{stat}}
 &=
 \left\langle
 \left(A_t-\bar{A}\right)^2
 \right\rangle,
 &
-\mathcal{R}*{\mathrm{sp}}
+\mathcal{R}_{\mathrm{sp}}
 &=
 \left\langle
 \lvert A_t\rvert
 \right\rangle,
-\
+\\
 \mathcal{R}_{\mathrm{spec}}
 &=
 \operatorname{ReLU}
@@ -92,17 +91,17 @@ Here, (\mathcal{L}_{\mathrm{dir}}) is the shared `Q0.40` active directional loss
 \sigma(\lvert A_t\rvert)-\rho
 \right)^2.
 \end{aligned}
-]
+$$
 
-where (\langle\cdot\rangle) denotes the mean over all entries, (\bar{A}) is the row-normalized static anchor constructed from (S), and (\sigma(\cdot)) denotes the spectral norm.
+Here, $\langle\cdot\rangle$ denotes the mean over all entries, $\bar{A}$ is the row-normalized static anchor constructed from $S$, and $\sigma(\cdot)$ denotes the spectral norm.
 
 The regularization terms serve distinct roles:
 
-* `R_comp` controls the scale of the decomposed latent component contributions.
-* `R_smooth` discourages abrupt changes in the learned dynamic graph across adjacent time steps.
-* `R_stat` softly anchors the dynamic graph to the static relational prior while still allowing time variation.
-* `R_sp` encourages sparse cross-currency connectivity.
-* `R_spec` penalizes excessive spectral magnitude of the learned adjacency and helps stabilize graph propagation.
+- $\mathcal{R}_{\mathrm{comp}}$ controls the scale of the decomposed latent component contributions.
+- $\mathcal{R}_{\mathrm{smooth}}$ discourages abrupt changes in the learned dynamic graph across adjacent time steps.
+- $\mathcal{R}_{\mathrm{stat}}$ softly anchors the dynamic graph to the static relational prior while still allowing time variation.
+- $\mathcal{R}_{\mathrm{sp}}$ encourages sparse cross-currency connectivity.
+- $\mathcal{R}_{\mathrm{spec}}$ penalizes excessive spectral magnitude of the learned adjacency and helps stabilize graph propagation.
 
 Thus, `ARC_FX` does not learn the forecasting target and graph structure independently. Its latent currency components, dynamic adjacency, and final directional forecasts are optimized jointly under a single end-to-end objective.
 
