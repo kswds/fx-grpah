@@ -16,11 +16,7 @@ This folder is a compact anonymous GitHub package for reproducing the main predi
 ## Not Included
 
 - raw source downloads
-- data-collection scripts
-- vendor credentials
 - raw input datasets
-
-The code starts from the processed panel described in [data/README.md](data/README.md).
 
 ## Repository Layout
 
@@ -67,37 +63,6 @@ Baselines in the released comparison:
 
 `Corr-LSTM-GAT` and `FXRP` are reference baselines and are documented as such in [docs/model_and_hyperparameters.md](docs/model_and_hyperparameters.md).
 
-## Installation
-
-```bash
-pip install -r requirements.txt
-```
-
-## Expected Processed Data
-
-Place the following files under `data/processed/`:
-
-- `factor_daily_alligned_krw.csv`
-- `score_vA_nonfx_features.csv`
-
-The expected column conventions and usage notes are summarized in [data/README.md](data/README.md).
-
-## Train From Scratch
-
-```bash
-python src/train.py --config configs/main_experiment.yaml --device cpu
-```
-
-This trains:
-
-- `ARC_FX`
-- `MLP`
-- `Transformer`
-- `GNN`
-- `Corr-LSTM-GAT`
-- `FXRP`
-
-Prediction files are written under `results/repro_runs/`.
 
 ## Build The Main Predictive Report
 
@@ -112,11 +77,3 @@ This creates:
 - `results/predictive_results/model_comparison_aggregate.csv`
 - `results/predictive_results/nontrivial_directional_detail.csv`
 - `results/predictive_results/nontrivial_directional_aggregate.csv`
-
-## Notes On The Released Comparison
-
-The headline markdown report intentionally omits `IC` from the public table.
-
-The released baseline comparison uses the same active directional core as ARC_FX on non-USD targets above the small-return threshold, while ARC_FX keeps its own graph/component regularization terms.
-
-The CSV outputs use public-facing model names such as `ARC_FX`, `MLP`, `Transformer`, `GNN`, `Corr-LSTM-GAT`, and `FXRP`.
