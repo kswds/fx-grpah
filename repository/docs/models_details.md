@@ -50,15 +50,27 @@ where:
 - `R_sp = mean(|A_t|)`
 - `R_spec = relu(sigma(|A_t|) - rho)^2`
 
+The corresponding regularization coefficients are:
+
+- lambda_comp = 1e-4
+- lambda_smooth = 1e-3
+- lambda_stat = 1e-3
+- lambda_sp = 1e-4
+- lambda_spec = 1e-3
+- rho = 1
+
 The regularization terms serve distinct roles:
 
-- `R_comp` controls the scale of the decomposed component contributions.
-- `R_smooth` discourages abrupt changes in the learned dynamic graph across adjacent time steps.
-- `R_stat` softly anchors the dynamic graph to the static relational prior while still allowing time variation.
-- `R_sp` encourages sparse cross-currency connectivity.
-- `R_spec` penalizes excessive spectral magnitude of the learned adjacency and helps stabilize graph propagation.
+R_comp controls the scale of the decomposed component contributions.
+R_smooth discourages abrupt changes in the learned dynamic graph across adjacent time steps.
+R_stat softly anchors the dynamic graph to the static relational prior while still allowing time variation.
+R_sp encourages sparse cross-currency connectivity.
+R_spec penalizes the spectral magnitude of the learned adjacency when it exceeds the bound rho = 1, helping stabilize graph propagation.
 
-Thus, `ARC_FX` jointly optimizes its component decomposition, dynamic graph structure, and final directional forecasts under a single end-to-end objective.
+The regularization weights are intentionally small relative to L_dir. They are designed to shape the learned component decomposition and graph structure without competing with the primary directional forecasting objective.
+
+Thus, ARC_FX jointly optimizes its component decomposition, dynamic graph structure, and final directional forecasts under a single end-to-end objective.
+
 ### Baseline Training Objective
 
 For the trainable baselines (`MLP`, `Transformer`, `GNN`, `Corr-LSTM-GAT`, and `FXRP`), the comparison objective is the shared `Q0.40` active directional loss described above.
