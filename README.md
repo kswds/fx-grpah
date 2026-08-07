@@ -3,7 +3,7 @@ This repository provides an anonymous implementation package for `ARC_FX`, inclu
 
 `ARC_FX` is the name used in the paper for the model implemented internally as `oursmain`.
 
-Additional implementation details for the proposed model, baselines, and experimental settings that could not be fully described due to space constraints are provided in [docs/models_details](docs/model_details.md)
+Additional implementation details for the proposed model, baselines, and experimental settings that could not be fully described due to space constraints are provided in [docs/models_details]
 
 ## Included
 - ARC_FX model implementation
@@ -54,7 +54,7 @@ Baselines in the released comparison:
 - `Corr-LSTM-GAT`
 - `FXRP`
 
-`Corr-LSTM-GAT` and `FXRP` are reference baselines and are documented as such in [docs/models_details](docs/model_details.md).
+`Corr-LSTM-GAT` and `FXRP` are reference baselines and are documented as such in [docs/models_details]
 
 
 ## Build The Main Predictive Report
