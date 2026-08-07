@@ -35,76 +35,30 @@ In words, the common directional core focuses training on economically more mean
 
 ### ARC_FX End-to-End Objective
 
-While the directional term is shared across models, `ARC_FX` is trained with a model-specific end-to-end objective designed to jointly learn directional forecasts, economically interpretable component signals, and a stable sparse dynamic currency graph.
+While the directional term is shared across models, `ARC_FX` is trained with a model-specific end-to-end objective designed to jointly learn directional forecasts, component signals, and a stable sparse dynamic currency graph.
 
-The full training objective is
+The full training objective is:
 
-$$
-\mathcal{L}_{\mathrm{ARC\_FX}}
-=
-\mathcal{L}_{\mathrm{dir}}
-+
-\lambda_{\mathrm{comp}}\mathcal{R}_{\mathrm{comp}}
-+
-\lambda_{\mathrm{smooth}}\mathcal{R}_{\mathrm{smooth}}
-+
-\lambda_{\mathrm{stat}}\mathcal{R}_{\mathrm{stat}}
-+
-\lambda_{\mathrm{sp}}\mathcal{R}_{\mathrm{sp}}
-+
-\lambda_{\mathrm{spec}}\mathcal{R}_{\mathrm{spec}}.
-$$
+`L_ARC_FX = L_dir + lambda_comp R_comp + lambda_smooth R_smooth + lambda_stat R_stat + lambda_sp R_sp + lambda_spec R_spec`
 
-Here, $\mathcal{L}_{\mathrm{dir}}$ is the shared `Q0.40` active directional loss described above. The additional terms regularize the latent component decomposition and the learned time-varying graph:
+where:
 
-$$
-\begin{aligned}
-\mathcal{R}_{\mathrm{comp}}
-&=
-\sum_m
-\left\langle
-\left(c_t^{(m)}\right)^2
-\right\rangle,
-&
-\mathcal{R}_{\mathrm{smooth}}
-&=
-\left\langle
-\left(A_t-A_{t-1}\right)^2
-\right\rangle,
-\\
-\mathcal{R}_{\mathrm{stat}}
-&=
-\left\langle
-\left(A_t-\bar{A}\right)^2
-\right\rangle,
-&
-\mathcal{R}_{\mathrm{sp}}
-&=
-\left\langle
-\lvert A_t\rvert
-\right\rangle,
-\\
-\mathcal{R}_{\mathrm{spec}}
-&=
-\operatorname{ReLU}
-\left(
-\sigma(\lvert A_t\rvert)-\rho
-\right)^2.
-\end{aligned}
-$$
-
-Here, $\langle\cdot\rangle$ denotes the mean over all entries, $\bar{A}$ is the row-normalized static anchor constructed from $S$, and $\sigma(\cdot)$ denotes the spectral norm.
+- `L_dir`: shared `Q0.40` active directional loss
+- `R_comp = sum_m mean((c_t^(m))^2)`
+- `R_smooth = mean((A_t - A_(t-1))^2)`
+- `R_stat = mean((A_t - A_bar)^2)`
+- `R_sp = mean(|A_t|)`
+- `R_spec = relu(sigma(|A_t|) - rho)^2`
 
 The regularization terms serve distinct roles:
 
-- $\mathcal{R}_{\mathrm{comp}}$ controls the scale of the decomposed latent component contributions.
-- $\mathcal{R}_{\mathrm{smooth}}$ discourages abrupt changes in the learned dynamic graph across adjacent time steps.
-- $\mathcal{R}_{\mathrm{stat}}$ softly anchors the dynamic graph to the static relational prior while still allowing time variation.
-- $\mathcal{R}_{\mathrm{sp}}$ encourages sparse cross-currency connectivity.
-- $\mathcal{R}_{\mathrm{spec}}$ penalizes excessive spectral magnitude of the learned adjacency and helps stabilize graph propagation.
+- `R_comp` controls the scale of the decomposed component contributions.
+- `R_smooth` discourages abrupt changes in the learned dynamic graph across adjacent time steps.
+- `R_stat` softly anchors the dynamic graph to the static relational prior while still allowing time variation.
+- `R_sp` encourages sparse cross-currency connectivity.
+- `R_spec` penalizes excessive spectral magnitude of the learned adjacency and helps stabilize graph propagation.
 
-Thus, `ARC_FX` does not learn the forecasting target and graph structure independently. Its latent currency components, dynamic adjacency, and final directional forecasts are optimized jointly under a single end-to-end objective.
-
+Thus, `ARC_FX` jointly optimizes its component decomposition, dynamic graph structure, and final directional forecasts under a single end-to-end objective.
 ### Baseline Training Objective
 
 For the trainable baselines (`MLP`, `Transformer`, `GNN`, `Corr-LSTM-GAT`, and `FXRP`), the comparison objective is the shared `Q0.40` active directional loss described above.
