@@ -55,18 +55,3 @@ Baselines in the released comparison:
 - `FXRP`
 
 `Corr-LSTM-GAT` and `FXRP` are reference baselines and are documented as such in [docs/models_details]
-
-
-## Build The Main Predictive Report
-
-```bash
-python src/evaluate.py --config configs/main_experiment.yaml
-```
-
-This creates:
-
-- `results/predictive_results/final_overall_prediction.md`
-- `results/predictive_results/model_comparison_detail.csv`
-- `results/predictive_results/model_comparison_aggregate.csv`
-- `results/predictive_results/nontrivial_directional_detail.csv`
-- `results/predictive_results/nontrivial_directional_aggregate.csv`
