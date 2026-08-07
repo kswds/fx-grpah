@@ -6,10 +6,6 @@ experiment:
   seeds: [21, 42, 456]
   baseline_models: [mlp, transformer, gnn, corrlstmgat, fxrp]
 
-data:
-  fx_data_path: data/processed/factor_daily_alligned_krw.csv
-  nonfx_data_path: data/processed/score_vA_nonfx_features.csv
-
 training:
   hidden: 48
   epochs: 80
