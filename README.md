@@ -1,4 +1,4 @@
-# ARC_FX: Anonymous Repository for Model Implementations and Results
+# ARC_FX: Anonymous Repository for Detailed Model Implementations and Results
 This repository provides an anonymous implementation package for `ARC_FX`, including the model implementation, baseline implementations, training configurations, and the main predictive comparison results reported in the paper.
 
 `ARC_FX` is the name used in the paper for the model implemented internally as `oursmain`.
