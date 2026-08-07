@@ -3,12 +3,12 @@ This repository provides an anonymous implementation package for `ARC_FX`, inclu
 
 `ARC_FX` is the name used in the paper for the model implemented internally as `oursmain`.
 
+Additional implementation details for the proposed model, baselines, and experimental settings that could not be fully described due to space constraints are provided in docs/models_details.md.
 
 ## Included
 - ARC_FX model implementation
 - baseline implementations
 - processed-data pipeline code
-- training and evaluation entrypoints
 - configuration file for the main experiment
 - documentation for model settings and hyperparameters
 
@@ -21,7 +21,6 @@ repository/
 ├── configs/
 │   └── main_experiment.yaml
 ├── docs/
-│   ├── model_and_hyperparameters.md
 │   └── models_details.md
 ├── data/
 │   └── README.md
