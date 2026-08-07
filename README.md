@@ -1,22 +1,16 @@
-# ARC_FX Anonymous Reproduction Package
+# ARC_FX: Anonymous Repository for Model Implementations and Results
+This repository provides an anonymous implementation package for `ARC_FX`, including the model implementation, baseline implementations, training configurations, and the main predictive comparison results reported in the paper.
 
-This folder is a compact anonymous GitHub package for reproducing the main predictive comparison of `ARC_FX`.
+`ARC_FX` is the name used in the paper for the model implemented internally as `oursmain`.
 
-`ARC_FX` is the paper name for the internal implementation `oursmain`.
 
 ## Included
-
 - ARC_FX model implementation
 - baseline implementations
 - processed-data pipeline code
 - training and evaluation entrypoints
 - configuration file for the main experiment
 - documentation for model settings and hyperparameters
-
-## Not Included
-
-- raw source downloads
-- raw input datasets
 
 ## Repository Layout
 
